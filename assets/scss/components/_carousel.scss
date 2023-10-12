@@ -1,0 +1,36 @@
+/* Common Slick Style */
+.slick{
+	&-dots{
+		display: flex;
+		justify-content: center;
+		margin-top: toRem(15);
+		margin-bottom: toRem(15);
+		line-height: 0;
+		list-style-type: none;
+		li{
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+			button{
+				font-size: 0;
+                width: toRem(12);
+                height: toRem(12);
+                border-radius: 10rem;
+                background-color: #cecece;
+                border: 0;
+				@extend %transition;
+
+                &:hover,
+                &:focus-visible
+                {
+                    background-color: $color-secondary;
+                }
+			}
+			&.slick-active{
+				button{
+					background-color: $color-primary;
+				}
+			}
+		}
+	}
+}

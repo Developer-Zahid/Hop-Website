@@ -1,0 +1,67 @@
+/* Common Button's Style */
+.btn{
+	--bs-btn-padding-y: #{toRem(15)};
+	--bs-btn-padding-x: #{toRem(25)};
+	--bs-btn-font-size: #{toRem(16)};
+	@include min-xxl{
+		--bs-btn-padding-y: #{toRem(25)};
+		--bs-btn-padding-x: #{toRem(40)};
+		--bs-btn-font-size: #{toRem(30)};
+	}
+
+	--bs-btn-font-family: #{$font-primary};
+	--bs-btn-font-weight: 800;
+	--bs-btn-line-height: 1;
+	box-shadow: none !important;
+	@extend %uppercase;
+
+	&__icon{
+		margin-right: toRem(10);
+	}
+}
+
+.btn-primary{
+	--_btn-interaction-color: #{$color-secondary};
+	@at-root .bg-secondary &{
+		--_btn-interaction-color: #{$color-secondary--dark};
+	}
+
+	--bs-btn-bg: #{$color-primary};
+	--bs-btn-border-color: #{$color-primary};
+
+	--bs-btn-hover-bg: var(--_btn-interaction-color);
+	--bs-btn-hover-border-color: var(--_btn-interaction-color);
+
+	--bs-btn-active-bg: var(--_btn-interaction-color);
+	--bs-btn-active-border-color: var(--_btn-interaction-color);
+
+	&:focus{
+		color: $color-white;
+		background-color: var(--_btn-interaction-color);
+		border-color: var(--_btn-interaction-color);
+	}
+}
+
+.play-btn{
+	font-size: toRem(65);
+}
+
+.scroll-top{
+	bottom: toRem(15);
+	right: toRem(15);
+	display: none;
+	cursor: pointer;
+	z-index: 7;
+
+	&__btn{
+		width: toRem(30);
+		height: toRem(30);
+		font-size: 1.1rem;
+		color: $color-white;
+		background-color: $color-primary;
+
+		&:active{
+			background-color: $color-secondary;
+		}
+	}
+}

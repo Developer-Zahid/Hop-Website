@@ -1,0 +1,176 @@
+/* Reset CSS */
+*,
+*::before,
+*::after
+{
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::selection{
+	color: $color-white;
+	background: $color-primary;
+}
+
+html,
+body
+{
+	scroll-behavior: smooth;
+}
+
+html{
+	font-size: 16px;
+	text-size-adjust: none;
+}
+
+body {
+	color: $color-black;
+	font-family: $font-primary;
+	font-weight: 400;
+}
+
+a,
+button
+{
+	color: inherit;
+	font-family: inherit;
+}
+
+a,
+a:hover,
+a:focus,
+a:active
+{
+	color: currentColor;
+	text-decoration: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:active
+{
+	outline: none;
+}
+
+input:-webkit-autofill{
+	-webkit-text-fill-color: unset;
+	transition: background-color 5000s;
+}
+
+img,
+svg
+{
+	display: block;
+}
+
+img{
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.preloader{
+	z-index: 99999;
+}
+
+@include min-xxl {
+	.container{
+		max-width: toRem(1240)
+	}
+}
+
+.user-select-none{
+	pointer-events: none;
+}
+
+/* Common Section Gap Style */
+.section-gap{
+	--_section-gap: #{toRem(80)};
+	@include max-lg{
+		--_section-gap: #{toRem(60)};
+	}
+	
+	padding: var(--_section-gap) 0;
+	&--fix{
+		padding-bottom: calc(var(--_section-gap) - $gutter);
+	}
+}
+
+/* Common Section Heading Style */
+.section-header{
+	margin-bottom: toRem(50);
+	
+	&__title{
+		color: $color-primary;
+		font-size: toRem(18);
+		@include max-xxxs{
+			font-size: toRem(16);
+		}
+		@include min-lg{
+			font-size: toRem(20);
+			letter-spacing: trackingToSpacing(100, 20px);
+		}
+
+		@at-root .cta &{
+			@include min-xxl{
+				font-size: toRem(30);
+				letter-spacing: trackingToSpacing(200, 30px);
+			}
+		}
+		font-family: $font-primary;
+		font-weight: 700;
+		margin-bottom: toRem(15);
+		@extend %uppercase;
+	}
+
+	&__sub-title{
+		color: $color-secondary;
+		font-size: toRem(30);
+		@include max-xxxs{
+			font-size: toRem(24);
+		}
+		@include min-xxl{
+			font-size: toRem(50);
+		}
+		font-family: $font-primary;
+		font-weight: 700;
+		line-height: 1;
+	}
+}
+
+.section-header{
+	margin-bottom: toRem(50);
+}
+
+.underline{
+	position: relative;
+
+	&::after{
+		content: '';
+		display: block;
+		width: toRem(40);
+		height: 4px;
+		background-color: $color-primary;
+	}
+}
+
+.match-height > [class*="col"]{
+	display: flex;
+	flex-flow: column;
+}
+
+.match-height > [class*="col"] > *{
+	flex: 1 1 auto;
+}
+
+.text-primary,
+.bg-primary
+{
+	--bs-primary-rgb: #{$color-primary-rgb};
+}
+
+.text-secondary,
+.bg-secondary
+{
+	--bs-secondary-rgb: #{$color-secondary-rgb};
+}

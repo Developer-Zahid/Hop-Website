@@ -1,0 +1,126 @@
+/* Footer Section Style */
+.footer{
+    color: $color-white;
+
+    &__top{
+        background-color: $color-secondary--dark;
+    }
+
+    &__logo{
+        max-height: toRem(130);
+        @include max-lg{
+            max-height: toRem(80);
+        }
+    }
+
+    &__block{
+        @extend %card-gap;
+
+        &__title{
+            font-size: toRem(20);
+            @include max-xxxs{
+                font-size: toRem(18);
+			}
+            @include min-xl{
+                font-size: toRem(22);
+			}
+            font-weight: 700;
+            font-family: $font-primary;
+            @extend %uppercase;
+            margin-bottom: toRem(23);
+            
+            &.underline::after{
+                margin-top: toRem(20);
+            }
+        }
+
+        &__social{
+            display: flex;
+            align-items: center;
+            gap: toRem(18);
+            color: $color-primary;
+            margin-top: toRem(30);
+            
+            &__link{
+                font-size: toRem(20);
+                padding: 2px;
+                @extend %transition;
+    
+                &:hover,
+                &:focus-visible
+                {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    &__list{
+        list-style-type: none;
+        padding-left: 0;
+
+        &__item{
+            margin-top: toRem(18);
+        }
+        
+        &__link{
+            display: flex;
+            align-items: center;
+            gap: toRem(8);
+            font-size: toRem(16);
+            @include min-sm{
+                font-size: toRem(17);
+            }
+            @extend %fw-light;
+            @extend %transition;
+
+            &:hover,
+            &:focus-visible
+            {
+                color: $color-primary;
+            }
+
+            &__icon{
+                flex-shrink: 0;
+                color: $color-primary;
+                &:not(.footer__list__link__icon--lg){
+                    font-size: toRem(10);
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        padding-top: toRem(20);
+        padding-bottom: toRem(20);
+        @include min-lg{
+            padding-top: toRem(40);
+            padding-bottom: toRem(40);
+        }
+
+        font-size: toRem(14);
+        @include min-sm{
+            font-size: toRem(18);
+        }
+        font-weight: 400;
+        font-family: $font-primary;
+
+        &__text{
+            font-size: toRem(14);
+            @include min-sm{
+                font-size: toRem(17);
+            }
+           @extend %fw-light;
+        }
+
+        &__link{
+            @extend %transition;
+
+            &:hover,
+            &:focus-visible
+            {
+                color: $color-secondary;
+            }
+        }
+    }
+}

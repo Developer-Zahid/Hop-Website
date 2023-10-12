@@ -1,0 +1,68 @@
+/* Header Section Style */
+.header{
+	.container-fluid{
+		max-width: 1740px;
+	}
+
+	.navbar{
+		@include max-sm{
+			--bs-navbar-padding-y: 5px;
+		}
+		@include min-xxl{
+			--bs-navbar-padding-y: #{toRem(15)};
+		}
+
+		&-brand__image{
+			max-height: toRem(65);
+			@include max-xxxs{
+				max-height: toRem(50);
+			}
+			@include min-xxl{
+				max-height: toRem(100);
+			}
+			@extend %transition;
+		}
+
+		&__btn{
+			display: inline-block;
+			font-size: toRem(16);
+			@include max-xxxs{
+				font-size: toRem(14);
+			}
+			@include min-sm{
+				font-size: toRem(24);
+			}
+			@include min-xxl{
+				font-size: toRem(30);
+			}
+			font-weight: 800;
+			font-family: $font-primary;
+			padding: 5px;
+
+			&__icon{
+				color: $color-primary;
+				margin-right: toRem(10);
+			}
+
+			&__text{
+				color: $color-secondary;
+			}
+
+			&:hover,
+			&:focus-visible
+			{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&.fixed{
+		box-shadow: 0 3px 45px rgba(0,0,0,0.15);
+		@include min-xxl{
+			.navbar-brand__image{
+				max-height: toRem(65);
+			}
+		}
+
+	}
+}

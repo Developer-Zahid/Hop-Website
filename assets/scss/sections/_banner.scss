@@ -1,0 +1,60 @@
+.banner{
+    @extend %stacking-context;
+    min-height: calc(var(--vh,1vh) * 100 - (var(--header-size) / 2));
+    display: flex;
+    align-items: center;
+    border-top: toRem(10) solid $color-primary;
+    @include max-md{
+        border-top-width: 6px;
+    }
+
+    &::after{
+        @extend %common-pseudo;
+        top: 0;
+        background-image: linear-gradient(rgba($color-secondary-rgb, 0.7), transparent);
+        width: 100%;
+        height: 50%;
+        z-index: -1;
+    }
+    
+    &__bg{
+        @extend %full-width;
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    &__title{
+        font-size: toRem(40);
+        @include max-xxxs{
+            font-size: toRem(25);
+        }
+        @include min-lg{
+            font-size: toRem(60);
+            letter-spacing: trackingToSpacing(50, 60px);
+        }
+        @include min-xxl{
+            font-size: toRem(90);
+            letter-spacing: trackingToSpacing(50, 90px);
+        }
+        font-family: $font-primary;
+        font-weight: 800;
+        margin-top: toRem(15);
+        line-height: 1.04;
+        @extend %uppercase;
+    }
+    
+    &__text{
+        font-size: toRem(18);
+        @include max-xxxs{
+            font-size: toRem(16);
+        }
+        @include min-xxl{
+            font-size: toRem(26);
+        }
+        font-weight: 600;
+        font-family: $font-primary;
+        line-height: 1.54;
+        margin-bottom: toRem(30);
+    }
+}

@@ -1,0 +1,180 @@
+/* About Card Style */
+.about__card{
+    margin-top: $gutter;
+
+    @at-root .active{
+        @include min-md{
+            border-left: 1px solid #e4e4e4;
+        }
+        @include min-lg{
+            border-right: 1px solid #e4e4e4;
+        }
+    }
+
+    &__icon{
+        width: toRem(129);
+        height: toRem(129);
+        border-radius: 50rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary;
+
+        &__image{
+            height: auto;
+        }
+    }
+
+    &__title{
+        color: $color-gray;
+        font-size: toRem(18);
+        @include min-md{
+            font-size: toRem(20);
+        }
+        font-weight: 700;
+        font-family: $font-primary;
+        margin-top: toRem(20);
+    }
+
+    &__text{
+        color: $color-gray-light;
+        @extend %common-text;
+    }
+
+}
+
+/* Feature Card Style */
+.feature__card{
+    @extend %card-gap;
+    
+    &__icon{
+        height: toRem(100);
+        display: inline-flex;
+        align-items: flex-end;
+
+        &__image{
+            height: auto;
+        }
+    }
+
+    &__title{
+        color: $color-gray;
+        font-size: toRem(18);
+        @include min-md{
+            font-size: toRem(20);
+        }
+        font-weight: 700;
+        font-family: $font-primary;
+    }
+
+    &__text{
+        color: $color-gray-light;
+        @extend %common-text;
+    }
+}
+
+/* Testimonial Card Style */
+.testimonial{
+    &__card{
+        --_border-color: transparent;
+        background-color: $color-white;
+        @extend %card-gap;
+        border-left: 1px solid var(--_border-color);
+        @include min-xl{
+            border-right: 1px solid var(--_border-color);
+        }
+        
+        &__body{
+            $_padding: toRem(20);
+            padding-left: $_padding;
+            padding-right: $_padding;
+            padding-bottom: $_padding;
+    
+            &__quote{
+                color: rgba($color-primary-rgb, 0.20);
+                font-size: toRem(80);
+            }
+    
+            &__icons{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) translateY(-80%);
+                bottom: 0;
+                color: #ffbf14;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: toRem(18);
+            }
+    
+            &__title{
+                color: $color-gray;
+                font-size: toRem(26);
+                @include max-xxxs{
+                    font-size: toRem(20);
+                }
+                @include min-lg{
+                    font-size: toRem(30);
+                }
+                font-weight: 600;
+                font-family: $font-primary;
+                margin-top: toRem(15);
+                margin-bottom: toRem(20);
+                line-height: 1;
+            }
+    
+            &__text{
+                position: relative;
+                color: $color-gray-light;
+                font-size: toRem(18);
+                @include max-xxxs{
+                    font-size: toRem(16);
+                }
+                @include min-xxl{
+                    font-size: toRem(22);
+                }
+                @extend %fw-light;
+                font-style: italic;
+                margin-bottom: 0;
+                line-height: 1.36;
+            }
+        }
+    
+        &__footer{
+            $_padding: toRem(10);
+            padding-left: $_padding;
+            padding-right: $_padding;
+    
+            &__avatar{
+                font-size: toRem(26);
+                font-weight: 700;
+                font-family: $font-primary;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: toRem(60);
+                height: toRem(60);
+                border-radius: 50rem;
+                @extend %uppercase;
+                margin-bottom: toRem(20);
+            }
+    
+            &__title{
+                color: $color-gray;
+                font-size: toRem(20);
+                font-weight: 700;
+                font-family: $font-primary;
+            }
+    
+            &__text{
+                color: $color-gray-light;
+                font-size: toRem(18);
+                @extend %fw-light;
+            }
+        }
+    }
+    &__slide.slick-center .testimonial__card{
+        --_border-color: #e6e6e6;
+    }
+}

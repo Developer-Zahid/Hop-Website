@@ -1,0 +1,53 @@
+.form{
+    &-label{
+        color: $color-gray;
+        @include min-lg{
+            font-size: toRem(18);
+        }
+        font-weight: 600;
+        font-family: $font-primary;
+    }
+    &-control,
+    &-select
+    {
+        --bs-border-color: #d2d2d2;
+        color: $color-gray;
+        @extend %fw-light;
+        
+
+        @include max-xl{
+            padding-top: toRem(15);
+            padding-bottom: toRem(15);
+        }
+        
+        &::placeholder{
+            color: currentColor;
+        }
+        &:focus{
+            color: $color-black;
+            box-shadow: none;
+            border-color: $color-secondary;
+        }
+
+        option{
+            font-size: toRem(14);
+        }
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+select{
+    cursor: pointer;
+}

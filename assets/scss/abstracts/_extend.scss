@@ -12,6 +12,11 @@
     height: 100%;
 }
 
+%select-none{
+    user-select: none;
+    pointer-events: none;
+}
+
 %block-center{
     margin-left: auto;
     margin-right: auto;
@@ -35,16 +40,34 @@
     margin-bottom: $gutter;
 }
 
-%common-text{
-    line-height: 1.67;
-    font-size: toRem(16);
-    @include min-md{
-        font-size: toRem(18);
-    }
-    @extend %fw-light;
+%rounded-pill{
+    border-radius: 50rem;
+}
+
+%border-none{
+    border: 0;
 }
 
 %fw-light{
     font-weight: 300;
-    font-family: $font-primary;
+}
+
+%fw-regular{
+    font-weight: 400;
+}
+
+%fw-medium{
+    font-weight: 500;
+}
+
+%fw-semibold{
+    font-weight: 600;
+}
+
+%fw-bold{
+    font-weight: 700;
+}
+
+%fw-extrabold{
+    font-weight: 800;
 }

@@ -38,7 +38,6 @@
 
     &__text{
         color: $color-gray-light;
-        @extend %common-text;
     }
 
 }
@@ -69,7 +68,6 @@
 
     &__text{
         color: $color-gray-light;
-        @extend %common-text;
     }
 }
 

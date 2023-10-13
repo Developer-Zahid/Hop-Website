@@ -1,60 +1,160 @@
 .banner{
-    @extend %stacking-context;
-    min-height: calc(var(--vh,1vh) * 100 - (var(--header-size) / 2));
-    display: flex;
-    align-items: center;
-    border-top: toRem(10) solid $color-primary;
-    @include max-md{
-        border-top-width: 6px;
+    padding-top: toRem(50);
+    padding-bottom: toRem(50);
+    overflow: hidden;
+
+    &__showcase{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-style: preserve-3d;
+        perspective: toRem(1500);
+
+        &__circle{
+            position: relative;
+            width: toRem(200);
+            @include min-lg{
+                width: toRem(270);
+            }
+            @include min-xl{
+                transform: translateZ(toRem(200));
+            }
+            aspect-ratio: 18 / 31;
+            transform-style: preserve-3d;
+            perspective: toRem(1500);
+            @extend %select-none;
+
+            @include max-sm{
+                --_move: 10deg;
+                @include motion{
+                    animation: rotate 10s linear infinite;
+                }
+                margin-top: toRem(-50);
+                margin-bottom: toRem(-30);
+            }
+            @media (max-width: 450px) {
+                --_move: 20deg;
+                perspective: toRem(800);
+                margin-top: toRem(-80);
+            }
+            @keyframes rotate {
+                0%,50%,100%{
+                    transform: rotateY(0);
+                }
+                25%{
+                    transform: rotateY(calc(var(--_move) * -1));
+                }
+                75%{
+                    transform: rotateY(var(--_move));
+                }
+            }
+        }
+        
+        &__card{
+            --_rotate: 26deg;
+            @include min-lg{
+                --_rotate: 34deg;
+            }
+            @extend %full-width;
+            border-radius: toRem(20);
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--card) * var(--_rotate))) translateZ(toRem(-500));
+            outline: 1px solid transparent;
+            margin-bottom: 0;
+
+            &__bg{
+                @extend %full-width;
+                @extend %select-none;
+            }
+        }
     }
 
-    &::after{
-        @extend %common-pseudo;
-        top: 0;
-        background-image: linear-gradient(rgba($color-secondary-rgb, 0.7), transparent);
-        width: 100%;
-        height: 50%;
-        z-index: -1;
-    }
-    
-    &__bg{
-        @extend %full-width;
-        object-fit: cover;
-        opacity: 0.5;
-        z-index: -1;
+    &__logo__image{
+        @include max-xl{
+            max-height: toRem(100);
+        }
     }
 
     &__title{
         font-size: toRem(40);
-        @include max-xxxs{
-            font-size: toRem(25);
+        @include min-sm{
+            font-size: toRem(50);
         }
-        @include min-lg{
-            font-size: toRem(60);
-            letter-spacing: trackingToSpacing(50, 60px);
+        @include min-md{
+            font-size: toRem(70);
         }
         @include min-xxl{
-            font-size: toRem(90);
-            letter-spacing: trackingToSpacing(50, 90px);
+            font-size: toRem(120);
         }
-        font-family: $font-primary;
-        font-weight: 800;
-        margin-top: toRem(15);
-        line-height: 1.04;
-        @extend %uppercase;
+        font-weight: 700;
+        line-height: 0.83;
+        margin-top: toRem(-20);
+    }
+
+    &__sub-title{
+        font-size: toRem(20);
+        margin-top: toRem(32);
+        margin-bottom: toRem(16);
+        @extend %fw-medium;
     }
     
     &__text{
-        font-size: toRem(18);
-        @include max-xxxs{
-            font-size: toRem(16);
+        color: #78786E;
+        font-size: toRem(14);
+        @extend %fw-medium;
+    }
+
+    &__form{
+        gap: toRem(15);
+        margin-top: toRem(27);
+
+        &__input,
+        &__btn
+        {
+            background-color: darken($color-white, $amount: 4);
+            padding: toRem(20);
         }
-        @include min-xxl{
-            font-size: toRem(26);
+
+        &__input{
+            color: $color-black;
+            font-size: toRem(14);
+            width: 100%;
+            max-width: toRem(375);
+            border: 1px solid darken($color-white, $amount: 4);
+            @extend %rounded-pill;
+            @extend %transition;
+
+            &::placeholder{
+                opacity: 1;
+                color: currentColor;
+            }
+
+            &:focus{
+                border-color: $color-black;
+            }
         }
-        font-weight: 600;
-        font-family: $font-primary;
-        line-height: 1.54;
-        margin-bottom: toRem(30);
+
+        &__btn{
+            font-size: toRem(15);
+            @extend %fw-medium;
+            @extend %border-none;
+            @extend %rounded-pill;
+            @extend %transition;
+
+            @include hover{
+                &:hover,
+                &:focus-visible
+                {
+                    color: $color-white;
+                    background-color: $color-black;
+                }
+            }
+
+            &:active{
+                color: $color-white;
+                background-color: $color-black;
+            }
+        }
     }
 }

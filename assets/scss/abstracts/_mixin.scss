@@ -85,3 +85,15 @@
         @content;
     }
 }
+
+@mixin hover {
+    @media (hover: hover) {
+        @content;
+    }
+}
+
+@mixin motion {
+    @media (prefers-reduced-motion: no-preference){
+        @content;
+    }
+}

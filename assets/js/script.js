@@ -1,6 +1,6 @@
 /* 
 --------------------------------------------------------------------
-Template Name: 	    AMERICA'S BEST CHOICE | Home improvement company website
+Template Name: 	    Hop Website | Hop Website
 Version:            1.00
 Author:             Zahid Hasan Munna | Developer Zahid
 Author Occupation: 	Frontend Web Design & Developer
@@ -35,13 +35,13 @@ Author Email: 	    dgtaltechzahidhasan@gmail.com
 
 	/* Window on load Event */
 	$(window).on('load', function () {
-        preLoader();
+        // preLoader();
     });
 
 	/* Window on resize Event */
 	$(window).on('resize', function () {
 		headerHeightFixer();
-		calculateVerticalHeight();
+		// calculateVerticalHeight();
     });
 	
 	/* Document on ready Event */
@@ -102,13 +102,13 @@ Author Email: 	    dgtaltechzahidhasan@gmail.com
 	$(window).on("scroll", function () {
 		var scrolling = $(this).scrollTop();
 
-		if (scrolling > 200) {
-			$(".header").addClass('fixed');
-			$(".scroll-top").slideDown();
-		} else {
-			$(".header").removeClass('fixed');
-			$(".scroll-top").slideUp();
-		}
+		// if (scrolling > 200) {
+		// 	$(".header").addClass('fixed');
+		// 	$(".scroll-top").slideDown();
+		// } else {
+		// 	$(".header").removeClass('fixed');
+		// 	$(".scroll-top").slideUp();
+		// }
 	});
 
 })(jQuery);

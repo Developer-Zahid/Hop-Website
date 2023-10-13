@@ -1,7 +1,7 @@
 // SCSS Variable's
 
-$scss-font-primary: 'Figtree', sans-serif;
-$scss-color-primary:#da2128;
+$scss-font-primary: 'Rubik', sans-serif;
+$scss-color-primary:#34CFCB;
 $scss-color-primary-rgb: toRGB($scss-color-primary);
 $scss-color-secondary:#022561;
 $scss-color-secondary-rgb: toRGB($scss-color-secondary);
@@ -26,9 +26,12 @@ $color-secondary: var(--color-secondary);
 $color-secondary-rgb: var(--color-secondary-rgb);
 $color-secondary--dark:var(--color-secondary--dark);
 
-$color-gray:#333333;
+$color-gray:#777777;
+$color-gray-dark:#3F3C3C;
+
 $color-gray-thin:#999999;
 $color-gray-light:#666666;
+
 $color-black:#000000;
 $color-white:#ffffff;
 

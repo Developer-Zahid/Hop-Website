@@ -1,5 +1,15 @@
 .pinterest-grid{
-    --_total-columns: 4;
+    --_total-columns: 1;
+    @include min-xs{
+        --_total-columns: 2;
+    }
+    @include min-md{
+        --_total-columns: 3;
+    }
+    @include min-lg{
+        --_total-columns: 4;
+    }
+
     --_gap: #{toRem(20)};
     display: block;
     columns: var(--_total-columns);

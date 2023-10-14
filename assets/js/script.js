@@ -95,7 +95,6 @@ Author Email: 	    dgtaltechzahidhasan@gmail.com
 				]
 			});
 		}
-
 	});
 
 	/* Window on scroll Event */

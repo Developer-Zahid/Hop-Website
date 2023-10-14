@@ -24,9 +24,9 @@ html{
 }
 
 body {
-	color: $color-black;
-	font-family: $font-primary;
-	font-weight: 400;
+	--bs-body-color: #{$color-black};
+	--bs-body-font-weight: 400;
+	--bs-body-font-family: #{$font-primary};
 }
 
 a,

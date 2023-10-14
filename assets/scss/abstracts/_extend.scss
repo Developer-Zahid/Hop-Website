@@ -17,6 +17,10 @@
     height: 100%;
 }
 
+%bg-light{
+    background-color: darken($color-white, $amount: 4);
+}
+
 %common-pseudo{
     content: '';
     position: absolute;

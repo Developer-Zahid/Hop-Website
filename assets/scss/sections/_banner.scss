@@ -72,6 +72,7 @@
                 --_rotate: 34deg;
             }
             @extend %full-width;
+            @extend %bg-light;
             border-radius: toRem(20);
             overflow: hidden;
             transform-style: preserve-3d;
@@ -128,7 +129,7 @@
         &__input,
         &__btn
         {
-            background-color: darken($color-white, $amount: 4);
+            @extend %bg-light;
             padding: toRem(20);
         }
 

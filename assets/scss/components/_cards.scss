@@ -67,3 +67,22 @@
         }
     }
 }
+
+.qr-card{
+    @include min-lg{
+        position: absolute;
+        right: calc(var(--bs-gutter-x) * .5);
+        bottom: 0;
+    }
+    padding: toRem(20) toRem(10);
+    border-radius: toRem(15);
+
+    &__text{
+        margin-top: toRem(20);
+        font-size: toRem(20);
+        @include min-xxl{
+            font-size: toRem(24);
+        }
+        line-height: 1;
+    }
+}

@@ -1,178 +1,69 @@
-/* About Card Style */
-.about__card{
-    margin-top: $gutter;
+/* Pins Card Style */
+.pins__card{
+    @extend %stacking-context;
+    @extend %overflow-hidden;
+    display: flex;
+    align-items: flex-end;
+    border-radius: toRem(15);
+    outline: 1px solid transparent;
 
-    @at-root .active{
-        @include min-md{
-            border-left: 1px solid #e4e4e4;
-        }
-        @include min-lg{
-            border-right: 1px solid #e4e4e4;
-        }
+    &::before{
+        @extend %common-pseudo;
+        @extend %full-width;
+        background-image: linear-gradient(180deg, transparent 47.11%, rgba($color-white, $alpha: 0.70) 80.43%);
+    }
+    
+    &__bg{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: -1;
+        @extend %transition;
     }
 
-    &__icon{
-        width: toRem(129);
-        height: toRem(129);
-        border-radius: 50rem;
-        display: inline-flex;
+    @include hover{
+        &:hover,
+        &:focus-visible
+        {
+            .pins__card__bg{
+                transform: rotate(-0.2deg) scale(1.05);
+            }
+        }
+    }
+    
+    &__content{
+        position: absolute;
+        padding: toRem(10);
+    }
+
+    &__title{
+        font-size: toRem(12);
+        margin-bottom: toRem(10);
+        @extend %fw-medium;
+    }
+
+    &__profile{
+        display: flex;
         align-items: center;
-        justify-content: center;
-        background-color: $color-primary;
+        gap: 5px;
 
-        &__image{
-            height: auto;
-        }
-    }
+        &__avatar{
+            --_size: #{toRem(52)};
+            @extend %stacking-context;
+            @extend %rounded-circle;
+            @extend %overflow-hidden;
+            width: var(--_size);
+            height: var(--_size);
+            flex-shrink: 0;
 
-    &__title{
-        color: $color-gray;
-        font-size: toRem(18);
-        @include min-md{
-            font-size: toRem(20);
-        }
-        font-weight: 700;
-        font-family: $font-primary;
-        margin-top: toRem(20);
-    }
-
-    &__text{
-        color: $color-gray-light;
-    }
-
-}
-
-/* Feature Card Style */
-.feature__card{
-    @extend %card-gap;
-    
-    &__icon{
-        height: toRem(100);
-        display: inline-flex;
-        align-items: flex-end;
-
-        &__image{
-            height: auto;
-        }
-    }
-
-    &__title{
-        color: $color-gray;
-        font-size: toRem(18);
-        @include min-md{
-            font-size: toRem(20);
-        }
-        font-weight: 700;
-        font-family: $font-primary;
-    }
-
-    &__text{
-        color: $color-gray-light;
-    }
-}
-
-/* Testimonial Card Style */
-.testimonial{
-    &__card{
-        --_border-color: transparent;
-        background-color: $color-white;
-        @extend %card-gap;
-        border-left: 1px solid var(--_border-color);
-        @include min-xl{
-            border-right: 1px solid var(--_border-color);
-        }
-        
-        &__body{
-            $_padding: toRem(20);
-            padding-left: $_padding;
-            padding-right: $_padding;
-            padding-bottom: $_padding;
-    
-            &__quote{
-                color: rgba($color-primary-rgb, 0.20);
-                font-size: toRem(80);
-            }
-    
-            &__icons{
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%) translateY(-80%);
-                bottom: 0;
-                color: #ffbf14;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 5px;
-                font-size: toRem(18);
-            }
-    
-            &__title{
-                color: $color-gray;
-                font-size: toRem(26);
-                @include max-xxxs{
-                    font-size: toRem(20);
-                }
-                @include min-lg{
-                    font-size: toRem(30);
-                }
-                font-weight: 600;
-                font-family: $font-primary;
-                margin-top: toRem(15);
-                margin-bottom: toRem(20);
-                line-height: 1;
-            }
-    
-            &__text{
-                position: relative;
-                color: $color-gray-light;
-                font-size: toRem(18);
-                @include max-xxxs{
-                    font-size: toRem(16);
-                }
-                @include min-xxl{
-                    font-size: toRem(22);
-                }
-                @extend %fw-light;
-                font-style: italic;
-                margin-bottom: 0;
-                line-height: 1.36;
+            &__bg{
+                @extend %full-width;
             }
         }
-    
-        &__footer{
-            $_padding: toRem(10);
-            padding-left: $_padding;
-            padding-right: $_padding;
-    
-            &__avatar{
-                font-size: toRem(26);
-                font-weight: 700;
-                font-family: $font-primary;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: toRem(60);
-                height: toRem(60);
-                border-radius: 50rem;
-                @extend %uppercase;
-                margin-bottom: toRem(20);
-            }
-    
-            &__title{
-                color: $color-gray;
-                font-size: toRem(20);
-                font-weight: 700;
-                font-family: $font-primary;
-            }
-    
-            &__text{
-                color: $color-gray-light;
-                font-size: toRem(18);
-                @extend %fw-light;
-            }
+
+        &__text{
+            font-size: toRem(10);
+            margin-bottom: 0;
         }
-    }
-    &__slide.slick-center .testimonial__card{
-        --_border-color: #e6e6e6;
     }
 }

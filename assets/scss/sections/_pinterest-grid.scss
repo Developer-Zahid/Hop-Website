@@ -1,0 +1,11 @@
+.pinterest-grid{
+    --_total-columns: 4;
+    --_gap: #{toRem(20)};
+    display: block;
+    columns: var(--_total-columns);
+    gap: var(--_gap);
+
+    &__column{
+        margin-bottom: var(--_gap);
+    }
+}

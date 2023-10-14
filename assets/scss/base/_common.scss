@@ -59,12 +59,15 @@ input:-webkit-autofill{
 }
 
 img,
-svg
+svg,
+video
 {
 	display: block;
 }
 
-img{
+img,
+video
+{
 	object-fit: cover;
 	max-width: 100%;
 }

@@ -85,11 +85,13 @@ input:-webkit-autofill {
 }
 
 img,
-svg {
+svg,
+video {
   display: block;
 }
 
-img {
+img,
+video {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
@@ -210,13 +212,18 @@ img {
   --bs-secondary-rgb: var(--color-secondary-rgb);
 }
 
-.banner__form__btn, .banner__form__input, .header .navbar-brand__image, .slick-dots li button {
+.banner__form__btn, .banner__form__input, .header .navbar-brand__image, .slick-dots li button, .pins__card__bg {
   -webkit-transition: all ease-in-out 0.25s;
   -o-transition: all ease-in-out 0.25s;
   transition: all ease-in-out 0.25s;
 }
 
-.banner__showcase__card__bg, .banner__showcase__card {
+.pins__card__profile__avatar, .pins__card {
+  position: relative;
+  isolation: isolate;
+}
+
+.banner__showcase__card__bg, .banner__showcase__card, .pins__card__profile__avatar__bg, .pins__card::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -224,6 +231,15 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.pins__card::before {
+  content: "";
+  position: absolute;
+}
+
+.banner, .pins__card__profile__avatar, .pins__card {
+  overflow: hidden;
 }
 
 .banner__showcase__card__bg, .banner__showcase__circle {
@@ -234,27 +250,27 @@ img {
   pointer-events: none;
 }
 
-.testimonial__card__footer__avatar, .btn, .section-header__title {
+.btn, .section-header__title {
   text-transform: uppercase;
-}
-
-.testimonial__card, .feature__card {
-  margin-bottom: 28px;
 }
 
 .banner__form__btn, .banner__form__input {
   border-radius: 50rem;
 }
 
+.pins__card__profile__avatar {
+  border-radius: 100rem;
+}
+
 .banner__form__btn {
   border: 0;
 }
 
-.testimonial__card__footer__text, .testimonial__card__body__text, .form-control, .form-select {
+.form-control, .form-select {
   font-weight: 300;
 }
 
-.banner__form__btn, .banner__text, .banner__sub-title {
+.banner__form__btn, .banner__text, .banner__sub-title, .pins__card__title {
   font-weight: 500;
 }
 
@@ -383,194 +399,62 @@ select {
   cursor: pointer;
 }
 
-/* About Card Style */
-.about__card {
-  margin-top: 28px;
-}
-@media (min-width: 768px) {
-  .active {
-    border-left: 1px solid #e4e4e4;
-  }
-}
-@media (min-width: 992px) {
-  .active {
-    border-right: 1px solid #e4e4e4;
-  }
-}
-
-.about__card__icon {
-  width: 8.0625rem;
-  height: 8.0625rem;
-  border-radius: 50rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--color-primary);
-}
-.about__card__icon__image {
-  height: auto;
-}
-.about__card__title {
-  color: #777777;
-  font-size: 1.125rem;
-  font-weight: 700;
-  font-family: var(--font-primary);
-  margin-top: 1.25rem;
-}
-@media (min-width: 768px) {
-  .about__card__title {
-    font-size: 1.25rem;
-  }
-}
-.about__card__text {
-  color: #666666;
-}
-
-/* Feature Card Style */
-.feature__card__icon {
-  height: 6.25rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+/* Pins Card Style */
+.pins__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border-radius: 0.9375rem;
+  outline: 1px solid transparent;
 }
-.feature__card__icon__image {
-  height: auto;
+.pins__card::before {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.11%, transparent), color-stop(80.43%, rgba(255, 255, 255, 0.7)));
+  background-image: -o-linear-gradient(top, transparent 47.11%, rgba(255, 255, 255, 0.7) 80.43%);
+  background-image: linear-gradient(180deg, transparent 47.11%, rgba(255, 255, 255, 0.7) 80.43%);
 }
-.feature__card__title {
-  color: #777777;
-  font-size: 1.125rem;
-  font-weight: 700;
-  font-family: var(--font-primary);
+.pins__card__bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
 }
-@media (min-width: 768px) {
-  .feature__card__title {
-    font-size: 1.25rem;
+@media (hover: hover) {
+  .pins__card:hover .pins__card__bg, .pins__card:focus-visible .pins__card__bg {
+    -webkit-transform: rotate(-0.2deg) scale(1.05);
+        -ms-transform: rotate(-0.2deg) scale(1.05);
+            transform: rotate(-0.2deg) scale(1.05);
   }
 }
-.feature__card__text {
-  color: #666666;
-}
-
-/* Testimonial Card Style */
-.testimonial__card {
-  --_border-color: transparent;
-  background-color: #ffffff;
-  border-left: 1px solid var(--_border-color);
-}
-@media (min-width: 1200px) {
-  .testimonial__card {
-    border-right: 1px solid var(--_border-color);
-  }
-}
-.testimonial__card__body {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-.testimonial__card__body__quote {
-  color: rgba(var(--color-primary-rgb), 0.2);
-  font-size: 5rem;
-}
-.testimonial__card__body__icons {
+.pins__card__content {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-80%);
-      -ms-transform: translateX(-50%) translateY(-80%);
-          transform: translateX(-50%) translateY(-80%);
-  bottom: 0;
-  color: #ffbf14;
+  padding: 0.625rem;
+}
+.pins__card__title {
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+}
+.pins__card__profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 5px;
-  font-size: 1.125rem;
 }
-.testimonial__card__body__title {
-  color: #777777;
-  font-size: 1.625rem;
-  font-weight: 600;
-  font-family: var(--font-primary);
-  margin-top: 0.9375rem;
-  margin-bottom: 1.25rem;
-  line-height: 1;
+.pins__card__profile__avatar {
+  --_size: 3.25rem;
+  width: var(--_size);
+  height: var(--_size);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-@media (max-width: 319.98px) {
-  .testimonial__card__body__title {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 992px) {
-  .testimonial__card__body__title {
-    font-size: 1.875rem;
-  }
-}
-.testimonial__card__body__text {
-  position: relative;
-  color: #666666;
-  font-size: 1.125rem;
-  font-style: italic;
+.pins__card__profile__text {
+  font-size: 0.625rem;
   margin-bottom: 0;
-  line-height: 1.36;
-}
-@media (max-width: 319.98px) {
-  .testimonial__card__body__text {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1400px) {
-  .testimonial__card__body__text {
-    font-size: 1.375rem;
-  }
-}
-.testimonial__card__footer {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-.testimonial__card__footer__avatar {
-  font-size: 1.625rem;
-  font-weight: 700;
-  font-family: var(--font-primary);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50rem;
-  margin-bottom: 1.25rem;
-}
-.testimonial__card__footer__title {
-  color: #777777;
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-family: var(--font-primary);
-}
-.testimonial__card__footer__text {
-  color: #666666;
-  font-size: 1.125rem;
-}
-.testimonial__slide.slick-center .testimonial__card {
-  --_border-color: #e6e6e6;
 }
 
 /* Common Slick Style */
@@ -676,7 +560,6 @@ select {
 .banner {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
-  overflow: hidden;
 }
 .banner__showcase {
   display: -webkit-box;
@@ -773,6 +656,21 @@ select {
   outline: 1px solid transparent;
   margin-bottom: 0;
 }
+.banner__showcase__card:nth-of-type(1) {
+  --card: 2;
+}
+.banner__showcase__card:nth-of-type(2) {
+  --card: 1;
+}
+.banner__showcase__card:nth-of-type(3) {
+  --card: 0;
+}
+.banner__showcase__card:nth-of-type(4) {
+  --card: -1;
+}
+.banner__showcase__card:nth-of-type(5) {
+  --card: -2;
+}
 @media (min-width: 992px) {
   .banner__showcase__card {
     --_rotate: 34deg;
@@ -863,4 +761,17 @@ select {
 .banner__form__btn:active {
   color: #ffffff;
   background-color: #000000;
+}
+
+.pinterest-grid {
+  --_total-columns: 4;
+  --_gap: 1.25rem;
+  display: block;
+  -webkit-columns: var(--_total-columns);
+     -moz-columns: var(--_total-columns);
+          columns: var(--_total-columns);
+  gap: var(--_gap);
+}
+.pinterest-grid__column {
+  margin-bottom: var(--_gap);
 }/*# sourceMappingURL=style.css.map */

@@ -212,18 +212,20 @@ video {
   --bs-secondary-rgb: var(--color-secondary-rgb);
 }
 
-.banner__form__btn, .banner__form__input, .header .navbar .dropdown-toggle::before, .header .navbar .dropdown-toggle, .header .navbar__btn, .header .navbar__form__btn, .header .navbar-brand__image, .slick-dots li button, .pins__card__bg {
+.banner__form__btn, .banner__form__input, .header .navbar .dropdown-toggle::before, .header .navbar .dropdown-toggle, .header .navbar__btn, .header .navbar__form__btn, .header .navbar-brand__image, .slick-dots li button, .pins__card__bg,
+.interests__card__bg {
   -webkit-transition: all ease-in-out 0.25s;
   -o-transition: all ease-in-out 0.25s;
   transition: all ease-in-out 0.25s;
 }
 
-.header .navbar .dropdown-toggle, .pins__card__profile__avatar, .pins__card {
+.header .navbar .dropdown-toggle, .pins__card__profile__avatar, .pins__card,
+.interests__card {
   position: relative;
   isolation: isolate;
 }
 
-.banner__showcase__card__bg, .banner__showcase__card, .header .navbar .dropdown-toggle::before, .pins__card__profile__avatar__bg, .pins__card::before {
+.banner__showcase__card__bg, .banner__showcase__card, .header .navbar .dropdown-toggle::before, .interests__card__content, .pins__card__profile__avatar__bg, .pins__card::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -242,7 +244,8 @@ video {
   position: absolute;
 }
 
-.banner, .pins__card__profile__avatar, .pins__card {
+.banner, .pins__card__profile__avatar, .pins__card,
+.interests__card {
   overflow: hidden;
 }
 
@@ -274,8 +277,16 @@ video {
   font-weight: 300;
 }
 
+.interests__title {
+  font-weight: 400;
+}
+
 .banner__form__btn, .banner__text, .banner__sub-title, .pins__card__title {
   font-weight: 500;
+}
+
+.interests__card__title {
+  font-weight: 600;
 }
 
 /* Common Button's Style */
@@ -410,6 +421,19 @@ select {
   cursor: pointer;
 }
 
+.pins__card,
+.interests__card {
+  border-radius: 0.9375rem;
+  outline: 1px solid transparent;
+}
+.pins__card__bg,
+.interests__card__bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
 /* Pins Card Style */
 .pins__card {
   display: -webkit-box;
@@ -418,19 +442,11 @@ select {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border-radius: 0.9375rem;
-  outline: 1px solid transparent;
 }
 .pins__card::before {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.11%, transparent), color-stop(80.43%, rgba(255, 255, 255, 0.7)));
   background-image: -o-linear-gradient(top, transparent 47.11%, rgba(255, 255, 255, 0.7) 80.43%);
   background-image: linear-gradient(180deg, transparent 47.11%, rgba(255, 255, 255, 0.7) 80.43%);
-}
-.pins__card__bg {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: -1;
 }
 @media (hover: hover) {
   .pins__card:hover .pins__card__bg, .pins__card:focus-visible .pins__card__bg {
@@ -465,6 +481,50 @@ select {
 }
 .pins__card__profile__text {
   font-size: 0.625rem;
+  margin-bottom: 0;
+}
+
+.interests__card {
+  cursor: pointer;
+  display: block;
+}
+.interests__card__input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
+}
+.interests__card__input:checked ~ .interests__card__content {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+.interests__card__input:checked ~ .interests__card__content .interests__card__content__mark {
+  opacity: 1;
+}
+.interests__card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  background-image: -o-radial-gradient(50% 50%, 56.27% 70.29%, rgba(255, 255, 255, 0.55) 0%, transparent 100%);
+  background-image: radial-gradient(56.27% 70.29% at 50% 50%, rgba(255, 255, 255, 0.55) 0%, transparent 100%);
+}
+.interests__card__content__mark {
+  position: absolute;
+  top: 0.8125rem;
+  right: 0.8125rem;
+  font-size: 1.3125rem;
+  color: var(--color-primary);
+  opacity: 0;
+}
+.interests__card__title {
+  font-size: 1.25rem;
   margin-bottom: 0;
 }
 
@@ -950,4 +1010,31 @@ select {
 }
 .pinterest-grid__column {
   margin-bottom: var(--_gap);
+}
+
+.interests__title {
+  font-size: 1.875rem;
+}
+.interests .pinterest-grid {
+  --_total-columns: 2;
+}
+@media (max-width: 319.98px) {
+  .interests .pinterest-grid {
+    --_total-columns: 1;
+  }
+}
+@media (min-width: 480px) {
+  .interests .pinterest-grid {
+    --_total-columns: 3;
+  }
+}
+@media (min-width: 768px) {
+  .interests .pinterest-grid {
+    --_total-columns: 4;
+  }
+}
+@media (min-width: 992px) {
+  .interests .pinterest-grid {
+    --_total-columns: 6;
+  }
 }/*# sourceMappingURL=style.css.map */

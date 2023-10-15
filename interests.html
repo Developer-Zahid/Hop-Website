@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Primary Meta Tags -->
+	<title>Interests | Hop Website</title>
+	<meta name="author" content="Developer Zahid">
+	<meta name="title" content="Hop Website" />
+	<meta name="description" content="Hop Website" />
+	<meta name="keywords" content="Hop Website">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://hop-webapp.netlify.app" />
+	<meta property="og:title" content="Hop" />
+	<meta property="og:description" content="Hop Website" />
+	<meta property="og:image" content="https://hop-webapp.netlify.app/assets/images/og/og-image.jpg" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://hop-webapp.netlify.app" />
+	<meta property="twitter:title" content="Hop" />
+	<meta property="twitter:description" content="Hop Website" />
+	<meta property="twitter:image" content="https://hop-webapp.netlify.app/assets/images/og/og-image.jpg" />
+
+	<!-- Favicon Link -->
+	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+	<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
+	<!-- All CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body>
+	<!-- Preloader Section -->
+	<!-- <div class="preloader position-fixed w-100 h-100 bg-white">
+		<div class="preloader__container w-100 h-100 d-flex align-items-center justify-content-center p-2">
+			<img class="user-select-none" src="./assets/images/logo/logo-black.png" alt="logo" height="100">
+		</div>
+	</div> -->
+
+	<!-- Pins Section -->
+	<section class="interests py-5">
+		<div class="container">
+			<h1 class="interests__title text-center mb-5">Interests</h1>
+			<div class="pinterest-grid">
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="travel" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-2.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Travel</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="culture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-3.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Culture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="patterns" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-7.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Patterns</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="travel" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-2.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Travel</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="culture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-3.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Culture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="film" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-8.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Film</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="experimental" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-9.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Experimental</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="textures" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-10.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Textures</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="travel" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-2.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Travel</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="culture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-3.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Culture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="patterns" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-7.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Patterns</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="travel" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-2.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Travel</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="culture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-3.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Culture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="film" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-8.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Film</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="experimental" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-9.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Experimental</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="textures" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-10.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Textures</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="travel" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-2.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Travel</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="culture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-3.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Culture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="patterns" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-7.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Patterns</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="travel" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-2.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Travel</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="culture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-3.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Culture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="film" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-8.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Film</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="food" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-1.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Food</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="experimental" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-9.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Experimental</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="textures" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-10.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Textures</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="nature" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-4.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Nature</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="animals" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-5.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Animals</h3>
+						</div>
+					</label>
+				</div>
+				<div class="pinterest-grid__column">
+					<label class="interests__card">
+						<input type="checkbox" name="interests[]" value="architecture" class="interests__card__input">
+						<img class="interests__card__bg" src="./assets/images/interests/interest-6.png" alt="interest" loading="lazy">
+						<div class="interests__card__content">
+							<span class="interests__card__content__mark">
+								<svg width="1em" height="1em" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5253 0.593872C17.5615 0.593872 22.4549 5.48722 22.4549 11.5235C22.4549 17.5597 17.5615 22.4531 11.5253 22.4531C5.48905 22.4531 0.595703 17.5597 0.595703 11.5235C0.595703 5.48722 5.48905 0.593872 11.5253 0.593872ZM15.0443 8.21144L10.1591 13.0966L8.00633 10.9439C7.68622 10.6237 7.16719 10.6237 6.84707 10.9439C6.52696 11.264 6.52696 11.7829 6.84707 12.1031L9.57951 14.8355C9.89964 15.1556 10.4186 15.1556 10.7387 14.8355L16.2035 9.37067C16.5236 9.05059 16.5236 8.53156 16.2035 8.21144C15.8834 7.89133 15.3644 7.89133 15.0443 8.21144Z" fill="currentColor"/>
+								</svg>
+							</span>
+							<h3 class="interests__card__title">Architecture</h3>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- All Scripts -->
+	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>

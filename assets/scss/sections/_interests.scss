@@ -1,0 +1,22 @@
+.interests{
+    &__title{
+        font-size: toRem(30);
+        @extend %fw-regular;
+    }
+
+    .pinterest-grid{
+        --_total-columns: 2;
+        @include max-xxxs{
+            --_total-columns: 1;
+        }
+        @include min-xs{
+            --_total-columns: 3;
+        }
+        @include min-md{
+            --_total-columns: 4;
+        }
+        @include min-lg{
+            --_total-columns: 6;
+        }
+    }
+}

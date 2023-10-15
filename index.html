@@ -13,17 +13,17 @@
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="#!" />
+	<meta property="og:url" content="https://hop-webapp.netlify.app" />
 	<meta property="og:title" content="Hop" />
 	<meta property="og:description" content="Hop Website" />
-	<meta property="og:image" content="#!/assets/images/og/og-image.jpg" />
+	<meta property="og:image" content="https://hop-webapp.netlify.app/assets/images/og/og-image.jpg" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="#!" />
+	<meta property="twitter:url" content="https://hop-webapp.netlify.app" />
 	<meta property="twitter:title" content="Hop" />
 	<meta property="twitter:description" content="Hop Website" />
-	<meta property="twitter:image" content="#!/assets/images/og/og-image.jpg" />
+	<meta property="twitter:image" content="https://hop-webapp.netlify.app/assets/images/og/og-image.jpg" />
 
 	<!-- Favicon Link -->
 	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
@@ -81,9 +81,9 @@
 				<a class="navbar-brand" href="/">
 					<img class="navbar-brand__image" src="./assets/images/logo/logo-white.png" alt="logo">
 				</a>
-				<div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+				<div class="offcanvas offcanvas-top bg-black" tabindex="-1" id="offcanvasTop">
 					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasTopLabel">Search</h5>
+						<h5 class="offcanvas-title text-white">Search</h5>
 						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body">
@@ -141,7 +141,7 @@
 						<img class="banner__showcase__card__bg" src="./assets/images/banner/image-2.avif" alt="showcase" loading="lazy">
 					</figure>
 					<figure class="banner__showcase__card">
-						<video class="banner__showcase__card__bg" poster="./assets/images/banner/image-3.avif" muted autoplay loop playsinline controls preload="auto" tabindex="-1">
+						<video class="banner__showcase__card__bg" poster="./assets/images/banner/image-3.avif" muted autoplay loop playsinline controls preload="auto" tabindex="-1" aria-hidden="true">
 							<source src="./assets/videos/pins/pin-1.mp4" type="video/mp4">
 						</video>
 					</figure>

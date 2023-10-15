@@ -10,10 +10,9 @@
 	}
 
 	--bs-btn-font-family: #{$font-primary};
-	--bs-btn-font-weight: 800;
+	--bs-btn-font-weight: 500;
 	--bs-btn-line-height: 1;
 	box-shadow: none !important;
-	@extend %uppercase;
 
 	&__icon{
 		margin-right: toRem(10);
@@ -21,22 +20,21 @@
 }
 
 .btn-primary{
-	--_btn-interaction-color: #{$color-secondary};
-	@at-root .bg-secondary &{
-		--_btn-interaction-color: #{$color-secondary--dark};
-	}
+	--_btn-interaction-color: #D3D3D3;
 
 	--bs-btn-bg: #{$color-primary};
 	--bs-btn-border-color: #{$color-primary};
+	--bs-btn-hover-color: #{$color-black};
 
 	--bs-btn-hover-bg: var(--_btn-interaction-color);
 	--bs-btn-hover-border-color: var(--_btn-interaction-color);
 
+	--bs-btn-active-color: var(--bs-btn-hover-color);
 	--bs-btn-active-bg: var(--_btn-interaction-color);
 	--bs-btn-active-border-color: var(--_btn-interaction-color);
 
 	&:focus{
-		color: $color-white;
+		color: var(--bs-btn-hover-color);
 		background-color: var(--_btn-interaction-color);
 		border-color: var(--_btn-interaction-color);
 	}

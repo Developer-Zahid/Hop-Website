@@ -12,6 +12,7 @@
         position: relative;
         z-index: -1;
         @extend %transition;
+        @extend %select-none;
     }
 }
 
@@ -53,7 +54,10 @@
         gap: 5px;
 
         &__avatar{
-            --_size: #{toRem(52)};
+            --_size: #{toRem(30)};
+            @include min-sm{
+                --_size: #{toRem(52)};
+            }
             @extend %stacking-context;
             @extend %rounded-circle;
             @extend %overflow-hidden;
@@ -95,7 +99,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         border-radius: 15px;
         background-image: radial-gradient(56.27% 70.29% at 50% 50%, rgba($color-white, $alpha: 0.55) 0%, transparent 100%);
 
@@ -111,7 +114,10 @@
 
     &__title{
         @extend %fw-semibold;
-        font-size: toRem(20);
+        font-size: toRem(16);
+        @include min-sm{
+            font-size: toRem(20);
+        }
         margin-bottom: 0;
     }
 }

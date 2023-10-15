@@ -1,0 +1,27 @@
+.login{
+    min-height: calc(var(--vh, 1vh) * 100);
+
+    &__image{
+        @include max-sm{
+            max-height: toRem(300);
+        }
+        @include max-xs{
+            max-height: toRem(150);
+        }
+    }
+
+    &__title{
+        font-size: toRem(22);
+        @include min-lg{
+            font-size: toRem(30);
+        }
+        @extend %fw-semibold;
+    }
+
+    &__text{
+        color: #777777;
+        @include min-lg{
+            font-size: toRem(20);
+        }
+    }
+}

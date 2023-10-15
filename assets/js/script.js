@@ -22,59 +22,24 @@ Author Email: 	    dgtaltechzahidhasan@gmail.com
 		}
 	}
 
-	/* Fix Header Height function */
-    function headerHeightFixer(){
-    	$('.header-height-fix').css('height', $('header').innerHeight() +'px');
-    	$('html').css('--header-size', $('header').innerHeight() +'px');
-	};
-
     function calculateVerticalHeight() {
 		var vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', vh + 'px');
 	}
 
-	function getScrollbarWidth(){
-		return (window.innerWidth - $(document).width());
-	}
-
 	/* Window on load Event */
 	$(window).on('load', function () {
-        // preLoader();
+        preLoader();
     });
 
 	/* Window on resize Event */
 	$(window).on('resize', function () {
-		headerHeightFixer();
-		// calculateVerticalHeight();
+		calculateVerticalHeight();
     });
 	
 	/* Document on ready Event */
 	$(document).ready(function () {
-		$('header').before('<div class="header-height-fix"></div>');
-		headerHeightFixer();
 		calculateVerticalHeight();
-		/* scroll top btn function */
-		$(".scroll-top").on("click", function () {
-			$("html,body").animate({scrollTop: 0},50);
-		});
-		/* Prevent document scroll when dropdown is show function */
-		$('.header .dropdown-toggle').on('show.bs.dropdown', function(event){
-			$('body').css('padding-right', getScrollbarWidth() + 'px')
-			$('.header').css('padding-right', getScrollbarWidth() + 'px')
-			$('body').addClass('overflow-hidden')
-		})
-		/* Reset document scroll when dropdown is hide function */
-		$('.header .dropdown-toggle').on('hide.bs.dropdown', function(event){
-			$('body').css('padding-right', '')
-			$('.header').css('padding-right', '')
-			$('body').removeClass('overflow-hidden')
-		})
-		/* Load youtube iframe after an event function */
-		if($('[data-iframe-src]').length > 0){
-			$('[data-iframe-src]').on('click', function(){
-				$(this).closest('.video__figure').html(`<iframe src="${$(this).data('iframe-src')}${($(this).data('iframe-src').indexOf('?') > -1) ? '&': '?'}autoplay=1&enablejsapi=1&controls=1&autopause=0&muted=1" class="embed-responsive-item" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" loading="lazy"></iframe>`)
-			})
-		}
 		/* Load slick slider if exist in DOM function */
 		if($(".testimonial__slider").length > 0){
 			$(".testimonial__slider").slick({

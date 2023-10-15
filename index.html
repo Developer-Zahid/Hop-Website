@@ -43,11 +43,11 @@
 </head>
 <body>
 	<!-- Preloader Section -->
-	<!-- <div class="preloader position-fixed w-100 h-100 bg-white">
+	<div class="preloader position-fixed w-100 h-100 bg-white">
 		<div class="preloader__container w-100 h-100 d-flex align-items-center justify-content-center p-2">
 			<img class="user-select-none" src="./assets/images/logo/logo-black.png" alt="logo" height="100">
 		</div>
-	</div> -->
+	</div>
 
 	<!-- <svg class="navbar__nav__link__icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path class="navbar__nav__link__icon__after" d="M14.0635 0.664033C13.016 -0.219717 11.484 -0.219717 10.4365 0.664033L1.99895 7.78221C1.36551 8.3166 1 9.10315 1 9.9319V21.5633C1 22.7714 1.97938 23.7508 3.1875 23.7508H6.9375C8.14562 23.7508 9.125 22.7714 9.125 21.5633V16.5601C9.125 15.7109 9.80225 15.0201 10.6461 14.9981H13.8539C14.6978 15.0201 15.375 15.7109 15.375 16.5601V21.5633C15.375 22.7714 16.3544 23.7508 17.5625 23.7508H21.3125C22.5206 23.7508 23.5 22.7714 23.5 21.5633V9.9319C23.5 9.10315 23.1345 8.3166 22.501 7.78221L14.0635 0.664033Z" fill="currentColor"/>
@@ -98,7 +98,7 @@
 					</div>
 				</div>
 				<div class="navbar__actions nav align-items-center">
-					<a href="#!" class="navbar__btn rounded-pill d-none d-sm-inline-block">Login</a>
+					<a href="/login.html" class="navbar__btn rounded-pill d-none d-sm-inline-block">Login</a>
 					<button class="navbar__actions__toggler rounded-pill border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
 						<svg width="1em" height="1em" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M36.7238 0.75C56.6337 0.75 72.7735 16.9797 72.7735 37C72.7735 45.6595 69.7538 53.6095 64.7158 59.844L89.0844 84.3485C90.5408 85.813 90.5408 88.187 89.0844 89.6515C87.7608 90.983 85.6888 91.104 84.2289 90.0145L83.8107 89.6515L59.4416 65.1475C53.2415 70.2135 45.3355 73.25 36.7238 73.25C16.8141 73.25 0.674072 57.0205 0.674072 37C0.674072 16.9797 16.8141 0.75 36.7238 0.75ZM36.7238 8.25C20.9333 8.25 8.13264 21.1218 8.13264 37C8.13264 52.878 20.9333 65.75 36.7238 65.75C52.5141 65.75 65.315 52.878 65.315 37C65.315 21.1218 52.5141 8.25 36.7238 8.25Z" fill="currentColor"/>
@@ -112,10 +112,10 @@
 						</button>
 						<ul class="dropdown-menu dropdown-menu-end">
 							<li><a class="dropdown-item" href="/">Home</a></li>
-							<li><a class="dropdown-item" href="/interests.html">Login</a></li>
+							<li><a class="dropdown-item" href="/login.html">Login</a></li>
 							<li><a class="dropdown-item" href="#!">Support</a></li>
 							<li><a class="dropdown-item" href="#!">Privacy Policy</a></li>
-							<li><a class="dropdown-item" href="#!">Terms of Service</a></li>
+							<li><a class="dropdown-item" href="/interests.html">Terms of Service</a></li>
 							<li class="dropdown-item__copyright text-center">
 								<span>© Seeek 2023.</span>
 							</li>
@@ -367,22 +367,47 @@
 				</div>
 			</div>
 			<div class="qr-card bg-white z-1 mt-3">
-				<img class="qr-card__image mx-auto user-select-none" src="./assets/images/qr-code/qr-code.png" alt="qr-code">
+				<img class="qr-card__image mx-auto user-select-none" src="./assets/images/qr-code/qr-code.png" alt="qr-code" loading="lazy">
 				<p class="qr-card__text text-center mb-0"><span class="d-block">Scan to</span>Get the app</p>
 			</div>
 		</div>
 	</section>
 
-	<!-- Scroll To Top Button -->
-	<!-- <div class="scroll-top position-fixed">
-		<button type="button" class="scroll-top__btn border-0 d-inline-flex align-items-center justify-content-center">
-			<i class="fa-solid fa-chevron-up"></i>
-		</button>
-	</div> -->
-
 	<!-- All Scripts -->
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
+
+	<!-- Don't include this script on other pages -->
+	<script>
+		/* Header Function script */
+		function headerHeightFixer(){
+			$('.header-height-fix').css('height', $('header').innerHeight() +'px');
+			$('html').css('--header-size', $('header').innerHeight() +'px');
+		};
+
+		function getScrollbarWidth(){
+			return (window.innerWidth - $(document).width());
+		}
+
+		/* Document on ready Event */
+		$(document).ready(function () {
+			$('header').before('<div class="header-height-fix"></div>');
+			headerHeightFixer();
+			
+			/* Prevent document scroll when dropdown is show function */
+			$('.header .dropdown-toggle').on('show.bs.dropdown', function(event){
+				$('body').css('padding-right', getScrollbarWidth() + 'px')
+				$('.header').css('padding-right', getScrollbarWidth() + 'px')
+				$('body').addClass('overflow-hidden')
+			})
+			/* Reset document scroll when dropdown is hide function */
+			$('.header .dropdown-toggle').on('hide.bs.dropdown', function(event){
+				$('body').css('padding-right', '')
+				$('.header').css('padding-right', '')
+				$('body').removeClass('overflow-hidden')
+			})
+		});
+	</script>
 </body>
 </html>

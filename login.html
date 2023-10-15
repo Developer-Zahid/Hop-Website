@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Primary Meta Tags -->
+	<title>Login | Hop Website</title>
+	<meta name="author" content="Developer Zahid">
+	<meta name="title" content="Hop Website" />
+	<meta name="description" content="Hop Website" />
+	<meta name="keywords" content="Hop Website">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://hop-webapp.netlify.app" />
+	<meta property="og:title" content="Hop" />
+	<meta property="og:description" content="Hop Website" />
+	<meta property="og:image" content="https://hop-webapp.netlify.app/assets/images/og/og-image.jpg" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://hop-webapp.netlify.app" />
+	<meta property="twitter:title" content="Hop" />
+	<meta property="twitter:description" content="Hop Website" />
+	<meta property="twitter:image" content="https://hop-webapp.netlify.app/assets/images/og/og-image.jpg" />
+
+	<!-- Favicon Link -->
+	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+	<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
+	<!-- All CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body>
+	<!-- Preloader Section -->
+	<div class="preloader position-fixed w-100 h-100 bg-white">
+		<div class="preloader__container w-100 h-100 d-flex align-items-center justify-content-center p-2">
+			<img class="user-select-none" src="./assets/images/logo/logo-black.png" alt="logo" height="100">
+		</div>
+	</div>
+
+	<!-- Login Section -->
+	<section class="login d-md-flex align-items-center py-4">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<img class="login__image user-select-none mx-auto" src="./assets/images/login/login-image.png" alt="login" loading="lazy">
+				</div>
+				<div class="col-md-6 mt-4 mt-md-0">
+					<div class="text-center text-md-start">
+						<h1 class="login__title">Login Now</h1>
+						<p class="login__text">Lorem ipsum dolor sit amet consectetur.</p>
+					</div>
+					<form action="#!" class="mb-3">
+						<div class="mb-3">
+							<input type="text" name="username" class="form-control" placeholder="username" required>
+						</div>
+						<div class="input-group mb-3">
+							<input type="password" data-type="password" name="password" class="form-control border-end-0" placeholder="password" required>
+							<button type="button" class="input-group-text" data-toggle="password">
+								<span class="input-group-text__before">
+									<svg width="1em" height="1em" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.26604 0.836751C4.18107 0.731757 4.07793 0.646293 3.9626 0.585313C3.84728 0.524334 3.72206 0.489052 3.5942 0.481512C3.46634 0.473972 3.33839 0.494324 3.21777 0.541389C3.09714 0.588454 2.98623 0.661295 2.89147 0.755691C2.79672 0.850087 2.71999 0.96416 2.66575 1.0913C2.61151 1.21844 2.58082 1.35611 2.57548 1.49635C2.57013 1.63658 2.59023 1.77658 2.63461 1.90824C2.67899 2.03989 2.74677 2.16058 2.83401 2.26331L4.12413 3.82334C1.34635 5.85093 0.140894 8.76062 0.0828386 8.89762C0.0282128 9.03338 0 9.18013 0 9.32851C0 9.47688 0.0282128 9.62363 0.0828386 9.75939C0.112673 9.83187 0.819011 11.5501 2.38005 13.2604C4.46681 15.5452 7.09784 16.7526 10.0006 16.7526C11.4114 16.7611 12.8095 16.4606 14.1128 15.8687L15.7327 17.822C15.9062 18.0263 16.1462 18.1474 16.4006 18.1591C16.655 18.1707 16.9033 18.072 17.0917 17.8843C17.2801 17.6966 17.3935 17.435 17.4071 17.1563C17.4208 16.8776 17.3337 16.6043 17.1648 16.3955L4.26604 0.836751ZM10.0006 14.6313C7.6147 14.6313 5.52793 13.6829 3.79918 11.8135C3.11917 11.0754 2.53404 10.2393 2.05994 9.32806C2.48487 8.50518 3.57502 6.6853 5.44649 5.41342L12.7107 14.1734C11.8346 14.4801 10.9202 14.6345 10.0006 14.6313ZM19.9184 9.75939C19.8893 9.83099 19.1927 11.5271 17.6607 13.2206C17.5729 13.3274 17.4663 13.4135 17.3473 13.4737C17.2283 13.5339 17.0994 13.567 16.9684 13.5709C16.8374 13.5749 16.707 13.5496 16.5852 13.4967C16.4633 13.4437 16.3526 13.3642 16.2596 13.2629C16.1667 13.1616 16.0935 13.0407 16.0444 12.9074C15.9954 12.7742 15.9716 12.6314 15.9744 12.4878C15.9773 12.3441 16.0067 12.2026 16.0609 12.0718C16.1151 11.941 16.1931 11.8237 16.2899 11.7269C16.9335 11.0096 17.4886 10.2032 17.9413 9.32806C17.4674 8.41666 16.8823 7.58046 16.202 6.84263C14.4725 4.97325 12.3865 4.02486 10.0006 4.02486C9.73048 4.02486 9.46037 4.03724 9.19428 4.06198C9.06605 4.07704 8.93637 4.06385 8.81287 4.02318C8.68936 3.98252 8.57451 3.9152 8.47507 3.82518C8.37564 3.73517 8.29362 3.62427 8.23385 3.49901C8.17407 3.37375 8.13774 3.23666 8.12699 3.09579C8.11624 2.95492 8.13129 2.81311 8.17125 2.67871C8.21121 2.5443 8.27528 2.42001 8.35969 2.31314C8.4441 2.20627 8.54715 2.11897 8.66278 2.05638C8.77841 1.99378 8.90429 1.95716 9.03302 1.94866C9.3499 1.9186 9.67807 1.90358 10.0006 1.90358C12.9034 1.90358 15.5344 3.11183 17.6195 5.39662C19.1798 7.10691 19.8861 8.82603 19.9159 8.89762C19.971 9.0332 19.9996 9.17985 20 9.32823C20.0004 9.47661 19.9726 9.62345 19.9184 9.75939Z" fill="currentColor"/>
+									</svg>
+								</span>
+								<span class="input-group-text__after">
+									<svg width="1em" height="1em" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.6577 7.04112C22.4541 6.76091 17.6041 0.179138 11.4999 0.179138C5.39574 0.179138 0.545743 6.76039 0.342618 7.0406C0.245913 7.17415 0.193848 7.33482 0.193848 7.49971C0.193848 7.6646 0.245913 7.82527 0.342618 7.95883C0.545743 8.23903 5.39574 14.8208 11.4999 14.8208C17.6041 14.8208 22.4541 8.23903 22.6577 7.95935C22.7547 7.82589 22.8069 7.66518 22.8069 7.50023C22.8069 7.33529 22.7547 7.17457 22.6577 7.04112ZM11.4999 13.2583C7.0572 13.2583 3.14679 8.93851 1.96814 7.49997C3.14679 6.06143 7.0572 1.74164 11.4999 1.74164C15.9426 1.74164 19.853 6.06143 21.0322 7.49997C19.853 8.93851 15.9426 13.2583 11.4999 13.2583ZM13.6983 4.83435C13.5262 4.94962 13.4068 5.12853 13.3665 5.33176C13.3262 5.53499 13.3682 5.74591 13.4832 5.9182C13.7447 6.30935 13.8832 6.76664 13.8832 7.24008C13.8832 8.55362 12.814 9.62289 11.5004 9.62289C10.1869 9.62289 9.11762 8.55362 9.11762 7.24008C9.11762 5.92653 10.1864 4.85726 11.5004 4.85726C11.7076 4.85726 11.9063 4.77495 12.0529 4.62844C12.1994 4.48193 12.2817 4.28321 12.2817 4.07601C12.2817 3.86881 12.1994 3.6701 12.0529 3.52359C11.9063 3.37707 11.7076 3.29476 11.5004 3.29476C9.32491 3.29476 7.55512 5.06455 7.55512 7.24008C7.55512 9.4156 9.32491 11.1854 11.5004 11.1854C13.676 11.1854 15.4457 9.4156 15.4457 7.24008C15.4457 6.45674 15.2166 5.69945 14.7827 5.04997C14.7257 4.96456 14.6525 4.89122 14.5671 4.83414C14.4817 4.77707 14.3859 4.73739 14.2852 4.71736C14.1845 4.69733 14.0809 4.69736 13.9801 4.71743C13.8794 4.73751 13.7837 4.77723 13.6983 4.83435Z" fill="currentColor"/>
+									</svg>
+								</span>
+							</button>
+						</div>
+						<div class="text-end mb-3">
+							<a href="./forgot.html" class="text-primary fw-medium">Forgot Password?</a>
+						</div>
+						<button type="submit" class="btn btn-primary w-100 rounded-pill">Sign in</button>
+					</form>
+					<p class="text-center">Don’t have an account! <a href="./register.html" class="text-primary">Register</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- All Scripts -->
+	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			/* Password toggler function */
+			$('[data-toggle="password"]').on('click', function(){
+				const $currentInput = $(this).siblings('[data-type="password"]')
+				$(this).toggleClass('show')
+				if($currentInput.attr('type') == 'password'){
+					$currentInput.attr('type', 'text')
+				}else{
+					$currentInput.attr('type', 'password')
+				}
+			})
+		})
+	</script>
+</body>
+</html>

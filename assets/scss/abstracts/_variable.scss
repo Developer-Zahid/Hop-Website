@@ -3,6 +3,7 @@
 $scss-font-primary: 'Rubik', sans-serif;
 $scss-color-primary:#34CFCB;
 $scss-color-primary-rgb: toRGB($scss-color-primary);
+$scss-color-primary--light:#D5FDFC;
 $scss-color-secondary:#022561;
 $scss-color-secondary-rgb: toRGB($scss-color-secondary);
 $scss-color-secondary--dark: darken($scss-color-secondary, 12.50%);
@@ -10,6 +11,7 @@ $scss-color-secondary--dark: darken($scss-color-secondary, 12.50%);
 :root{
     --color-primary: #{$scss-color-primary};
     --color-primary-rgb: #{$scss-color-primary-rgb};
+    --color-primary--light: #{$scss-color-primary--light};
     --color-secondary: #{$scss-color-secondary};
     --color-secondary-rgb: #{$scss-color-secondary-rgb};
     --color-secondary--dark: #{$scss-color-secondary--dark};
@@ -22,6 +24,7 @@ $font-tertiary: var(--font-primary);
 
 $color-primary: var(--color-primary);
 $color-primary-rgb: var(--color-primary-rgb);
+$color-primary--light: var(--color-primary--light);
 $color-secondary: var(--color-secondary);
 $color-secondary-rgb: var(--color-secondary-rgb);
 $color-secondary--dark:var(--color-secondary--dark);

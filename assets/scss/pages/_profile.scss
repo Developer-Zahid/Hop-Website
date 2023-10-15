@@ -1,0 +1,7 @@
+.profile{
+    .pinterest-grid{
+        @include min-xl{
+            --_total-columns: 5;
+        }
+    }
+}

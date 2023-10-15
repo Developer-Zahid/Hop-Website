@@ -1,8 +1,15 @@
 //Responsive Bootstrap Breakpoint SCSS Mixin:
 
-//max-xxs
+//max-xxxs
 @mixin max-xxxs {
     @media (max-width: 319.98px) {
+        @content;
+    }
+}
+
+//max-xxs
+@mixin min-xxs {
+    @media (min-width: 320px) {
         @content;
     }
 }

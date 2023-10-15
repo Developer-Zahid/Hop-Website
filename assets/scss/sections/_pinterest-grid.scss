@@ -1,6 +1,6 @@
 .pinterest-grid{
     --_total-columns: 1;
-    @include min-xs{
+    @include min-xxs{
         --_total-columns: 2;
     }
     @include min-md{
@@ -16,6 +16,7 @@
     gap: var(--_gap);
 
     &__column{
+        break-inside: avoid;
         margin-bottom: var(--_gap);
     }
 }

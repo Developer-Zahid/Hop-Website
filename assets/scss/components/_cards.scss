@@ -100,7 +100,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 15px;
-        background-image: radial-gradient(56.27% 70.29% at 50% 50%, rgba($color-white, $alpha: 0.55) 0%, transparent 100%);
+        background-image: radial-gradient(56.27% 70.29% at 50% 50%, rgba($color-white, $alpha: 0.7) 0%, transparent 100%);
 
         &__mark{
             position: absolute;
@@ -121,8 +121,6 @@
         margin-bottom: 0;
     }
 }
-
-
 
 .qr-card{
     @include min-lg{

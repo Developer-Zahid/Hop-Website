@@ -40,6 +40,11 @@ Author Email: 	    dgtaltechzahidhasan@gmail.com
 	/* Document on ready Event */
 	$(document).ready(function () {
 		calculateVerticalHeight();
+
+		$(document).on('click', '[data-toggle="active"]', function(){
+			$(this).toggleClass('active')
+		})
+
 		/* Load slick slider if exist in DOM function */
 		if($(".testimonial__slider").length > 0){
 			$(".testimonial__slider").slick({

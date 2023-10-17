@@ -353,9 +353,8 @@
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	<!-- Don't include this script on other pages -->
+	<!-- Don't include this script on other pages, this is just for header functions -->
 	<script>
-		/* Header Function script */
 		function headerHeightFixer(){
 			$('.header-height-fix').css('height', $('header').innerHeight() +'px');
 			$('html').css('--header-size', $('header').innerHeight() +'px');

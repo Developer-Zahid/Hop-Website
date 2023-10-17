@@ -1,4 +1,5 @@
 .pinterest-grid{
+    --_gap: #{toRem(15)};
     --_total-columns: 1;
     @include min-xxs{
         --_total-columns: 2;
@@ -7,10 +8,9 @@
         --_total-columns: 3;
     }
     @include min-lg{
+        --_gap: #{toRem(20)};
         --_total-columns: 4;
     }
-
-    --_gap: #{toRem(20)};
     display: block;
     columns: var(--_total-columns);
     gap: var(--_gap);

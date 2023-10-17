@@ -1,8 +1,15 @@
 /* Common Button's Style */
 .btn{
-	--bs-btn-padding-y: #{toRem(15)};
-	--bs-btn-padding-x: #{toRem(30)};
-	--bs-btn-font-size: #{toRem(18)};
+	--bs-btn-padding-y: #{toRem(10)};
+	--bs-btn-padding-x: #{toRem(25)};
+	--bs-btn-font-size: #{toRem(16)};
+	--bs-border-radius: #{toRem(8)};
+	@include min-md{
+		--bs-btn-padding-y: #{toRem(15)};
+		--bs-btn-padding-x: #{toRem(30)};
+		--bs-btn-font-size: #{toRem(18)};
+		--bs-border-radius: #{toRem(15)};
+	}
 	--bs-btn-font-family: #{$font-primary};
 	--bs-btn-font-weight: 600;
 	--bs-btn-line-height: 1;
@@ -15,7 +22,6 @@
 
 .btn-primary{
 	--_btn-interaction-color: #D3D3D3;
-
 	--bs-btn-bg: #{$color-primary};
 	--bs-btn-border-color: #{$color-primary};
 	--bs-btn-hover-color: #{$color-black};
@@ -34,8 +40,60 @@
 	}
 }
 
-.play-btn{
-	font-size: toRem(65);
+.btn-secondary{
+	--bs-btn-color: #{$color-black};
+	--_btn-interaction-color: #{$color-primary};
+	--bs-btn-bg: #D3D3D3;
+	--bs-btn-border-color: var(--bs-btn-bg);
+	--bs-btn-hover-color: #{$color-white};
+
+	--bs-btn-hover-bg: var(--_btn-interaction-color);
+	--bs-btn-hover-border-color: var(--_btn-interaction-color);
+
+	--bs-btn-active-color: var(--bs-btn-hover-color);
+	--bs-btn-active-bg: var(--_btn-interaction-color);
+	--bs-btn-active-border-color: var(--_btn-interaction-color);
+
+	&:focus{
+		color: var(--bs-btn-hover-color);
+		background-color: var(--_btn-interaction-color);
+		border-color: var(--_btn-interaction-color);
+	}
+}
+
+.back-btn{
+	display: inline-flex;
+	align-items: center;
+	@include min-sm{
+		font-size: toRem(20);
+	}
+	gap: toRem(6);
+}
+
+.favorite-btn{
+	--_size: #{toRem(40)};
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--_size);
+	height: var(--_size);
+	font-size: toRem(18);
+	padding: 5px;
+	@extend %rounded-circle;
+	background-color: rgba($color-white, $alpha: 0.5);
+	border: 0;
+	color: $color-primary;
+	backdrop-filter: blur(toRem(25));
+	@include min-md{
+		--_size: #{toRem(50)};
+		font-size: toRem(22);
+	}
+
+	&:not(.active){
+		.favorite-btn__icon{
+			fill: transparent;
+		}
+	}
 }
 
 .scroll-top{

@@ -89,250 +89,304 @@
 			</a>
 		</nav>
 		<main class="dashboard__main profile">
-			<!-- Pins Section -->
-			<section class="pins py-4">
-				<div class="container-fluid gx-5">
-					<div class="pinterest-grid">
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
+			<div class="profile__wrapper position-relative">
+				<figure class="profile__banner mb-0 position-absolute top-0 start-0 end-0">
+					<img class="profile__banner__bg" src="./assets/images/profile-banner/banner-1.png" alt="profile banner" loading="lazy">
+				</figure>
+				<div class="profile__card">
+					<div class="container-fluid gx-xl-5">
+						<div class="d-flex align-items-center justify-content-between">
+							<a href="#!" class="back-btn text-white">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+								</svg>
+								<span class="back-btn__text">Back</span>
 							</a>
+							<button type="button" class="favorite-btn active" data-toggle="active">
+								<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="favorite-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+								</svg>
+							</button>
 						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-2.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-2.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
+						<div class="text-center">
+							<p class="profile__card__unsername text-white">@harsh_nak</p>
 						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-4.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-4.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-5.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<video class="pins__card__bg" poster="./assets/images/pins/pin-1.png" muted autoplay loop playsinline preload="auto">
+						<div class="text-center">
+							<div class="profile__card__avatar active">
+								<img class="profile__card__avatar__bg" src="./assets/images/avatars/profiles/avatar-1.png" alt="profile" loading="lazy">
+								<!-- If you want video instead of profile image then uncomment the codes below -->
+								<!-- <video class="profile__card__avatar__bg" poster="./assets/images/avatars/profiles/avatar-1.png" muted autoplay loop playsinline preload="auto">
 									<source src="./assets/videos/pins/pin-1.mp4" type="video/mp4">
-								</video>
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+								</video> -->
+							</div>
+							<div class="row">
+								<div class="col-lg-5 col-md-8 mx-auto">
+									<h3 class="profile__card__title">Harsh Nakrani</h3>
+									<p class="profile__card__text">Lorem ipsum dolor sit amet consectetur. Ut massa lacinia integer in. Tortor elementum a sed fermentum scelerisque.</p>
+								</div>
+							</div>
+							<div class="row align-items-center justify-content-center gx-lg-5">
+								<div class="col-sm-auto col-6">
+									<div class="profile__card__counts">
+										<p class="profile__card__counts__number">1.k</p>
+										<h3 class="profile__card__counts__title mb-sm-0">Followers</h3>
 									</div>
 								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+								<div class="col-sm-auto col-6">
+									<div class="profile__card__counts">
+										<p class="profile__card__counts__number">50</p>
+										<h3 class="profile__card__counts__title mb-sm-0">Following</h3>
 									</div>
 								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-6.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
+								<div class="col-sm-auto col-6">
+									<a href="#!" class="btn btn-secondary fw-normal">Share</a>
 								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
+								<div class="col-sm-auto col-6">
+									<a href="#!" class="btn btn-secondary fw-normal">Edit profile</a>
 								</div>
-							</a>
-						</div>
-						<div class="pinterest-grid__column">
-							<a href="#!" class="pins__card">
-								<img class="pins__card__bg" src="./assets/images/pins/pin-6.png" alt="pins" loading="lazy">
-								<div class="pins__card__content">
-									<h3 class="pins__card__title">brightness adjustment Animation</h3>
-									<div class="pins__card__profile">
-										<div class="pins__card__profile__avatar">
-											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
-										</div>
-										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
-									</div>
-								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			<div class="container-fluid gx-xl-5">
+				<ul class="nav justify-content-center nav-pills mt-4" role="tablist">
+					<button type="button" class="nav-link active" id="pills-pins-tab" data-bs-toggle="pill" data-bs-target="#pills-pins" role="tab" aria-selected="true"><span class="nav-link__text">Pins</span></button>
+					<button type="button" class="nav-link" id="pills-collections-tab" data-bs-toggle="pill" data-bs-target="#pills-collections" role="tab" aria-selected="false"><span class="nav-link__text">Collections</span></button>
+				</ul>
+				<div class="tab-content py-4">
+					<div class="tab-pane fade show active" id="pills-pins" role="tabpanel">
+						<!-- Pins Section -->
+						<div class="pins">
+							<div class="pinterest-grid">
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-2.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-2.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-4.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-4.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-5.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<video class="pins__card__bg" poster="./assets/images/pins/pin-1.png" muted autoplay loop playsinline preload="auto">
+											<source src="./assets/videos/pins/pin-1.mp4" type="video/mp4">
+										</video>
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-6.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="pinterest-grid__column">
+									<a href="#!" class="pins__card">
+										<img class="pins__card__bg" src="./assets/images/pins/pin-6.png" alt="pins" loading="lazy">
+										<div class="pins__card__content">
+											<h3 class="pins__card__title">brightness adjustment Animation</h3>
+											<div class="pins__card__profile">
+												<div class="pins__card__profile__avatar">
+													<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+												</div>
+												<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-collections" role="tabpanel">
+						<h1>Coming Soon</h1>
+					</div>
+				</div>
+			</div>
 		</main>
 	</div>
 
 
-
 	<!-- All Scripts -->
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
 	<!-- Don't include this script on other pages -->
 	<script>
-		/* Header Function script */
-		function headerHeightFixer(){
-			$('.header-height-fix').css('height', $('header').innerHeight() +'px');
-			$('html').css('--header-size', $('header').innerHeight() +'px');
-		};
-
-		function getScrollbarWidth(){
-			return (window.innerWidth - $(document).width());
-		}
-
 		/* Document on ready Event */
 		$(document).ready(function () {
-			$('header').before('<div class="header-height-fix"></div>');
-			headerHeightFixer();
-			
-			/* Prevent document scroll when dropdown is show function */
-			$('.header .dropdown-toggle').on('show.bs.dropdown', function(event){
-				$('body').css('padding-right', getScrollbarWidth() + 'px')
-				$('.header').css('padding-right', getScrollbarWidth() + 'px')
-				$('body').addClass('overflow-hidden')
-			})
-			/* Reset document scroll when dropdown is hide function */
-			$('.header .dropdown-toggle').on('hide.bs.dropdown', function(event){
-				$('body').css('padding-right', '')
-				$('.header').css('padding-right', '')
-				$('body').removeClass('overflow-hidden')
-			})
+			$(".tab-content").swipe( {
+				swipeLeft: function(event, direction, distance, duration, fingerCount) {
+					$(".nav-pills .nav-link.active").next('.nav-link').tab('show');
+				},
+				swipeRight: function(event, direction, distance, duration, fingerCount) {
+					$(".nav-pills .nav-link.active").prev('.nav-link').tab('show');
+				},
+			});
 		});
 	</script>
 </body>

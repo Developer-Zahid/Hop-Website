@@ -1,4 +1,120 @@
 .profile{
+    &__banner{
+        z-index: -1;
+        height: toRem(155);
+        @include min-sm{
+            height: toRem(200);
+        }
+        @include min-md{
+            height: toRem(250);
+        }
+        @include min-xxl{
+            height: toRem(390);
+        }
+
+        &__bg{
+            @extend %full-width;
+            @extend %select-none;
+        }
+    }
+    &__card{
+        padding-top: toRem(10);
+        @include min-sm{
+            padding-top: toRem(25);
+        }
+        @include min-md{
+            padding-top: toRem(50);
+        }
+        @include min-xxl{
+            padding-top: toRem(145);
+        }
+
+        &__unsername{
+            font-size: toRem(18);
+            @include min-sm{
+                font-size: toRem(32);
+            }
+        }
+
+        &__avatar{
+            --_avatar-size: #{toRem(120)};
+            --_border-size: #{toRem(2)};
+            @include min-md{
+                --_avatar-size: #{toRem(150)};
+                --_border-size: #{toRem(3)};
+            }
+            @include min-xxl{
+                --_avatar-size: #{toRem(255)};
+                --_border-size: #{toRem(4)};
+            }
+            @extend %stacking-context;
+            @extend %rounded-circle;
+            @extend %bg-light;
+            @extend %overflow-hidden;
+            display: inline-block;
+            width: calc(var(--_avatar-size) - var(--_border-size));
+            height: calc(var(--_avatar-size) - var(--_border-size));
+            margin: var(--_border-size);
+
+            &.active{
+                box-shadow: 0 0 0 var(--_border-size) $color-primary
+            }
+
+            &__bg{
+                @extend %full-width;
+            }
+        }
+
+        &__title{
+            @extend %fw-semibold;
+            font-size: toRem(18);
+            @include min-sm{
+                font-size: toRem(22);
+            }
+            @include min-md{
+                font-size: toRem(30);
+            }
+            @include min-xxl{
+                margin-top: toRem(15);
+            }
+        }
+
+        &__text{
+            color: $color-gray;
+            font-size: toRem(10);
+            @include min-xs{
+                font-size: toRem(13);
+            }
+            @include min-md{
+                font-size: toRem(15);
+            }
+        }
+
+        &__counts{
+            &__title,
+            &__number
+            {
+                font-size: toRem(14);
+                @include min-sm{
+                    font-size: toRem(18);
+                }
+                @include min-md{
+                    font-size: toRem(22);
+                }
+            }
+
+            &__number{
+                margin-bottom: 0;
+                @include min-sm{
+                    margin-bottom: 5px;
+                }
+            }
+            &__title{
+                @extend %fw-semibold;
+            }
+        }
+    }
+
     .pinterest-grid{
         @include min-xl{
             --_total-columns: 5;

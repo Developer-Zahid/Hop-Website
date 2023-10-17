@@ -44,6 +44,11 @@
 
     &__title{
         font-size: toRem(12);
+        @include min-xxs{
+            @include max-xxs{
+                font-size: toRem(10);
+            }
+        }
         margin-bottom: toRem(10);
         @extend %fw-medium;
     }
@@ -72,6 +77,11 @@
 
         &__text{
             font-size: toRem(10);
+            @include min-xxs{
+                @include max-xxs{
+                    font-size: toRem(8);
+                }
+            }
             margin-bottom: 0;
         }
     }

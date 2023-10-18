@@ -221,12 +221,12 @@ video {
 }
 
 .profile__card__avatar, .header .navbar .dropdown-toggle, .nav-pills .nav-link__text, .pins__card__profile__avatar, .pins__card,
-.interests__card {
+.interests__card, .create-form__upload__figure, .create-form__upload {
   position: relative;
   isolation: isolate;
 }
 
-.profile__card__avatar__bg, .profile__banner__bg, .banner__showcase__card__bg, .banner__showcase__card, .header .navbar .dropdown-toggle::before, .interests__card__content, .pins__card__profile__avatar__bg, .pins__card::before {
+.profile__card__avatar__bg, .profile__banner__bg, .banner__showcase__card__bg, .banner__showcase__card, .header .navbar .dropdown-toggle::before, .interests__card__content, .pins__card__profile__avatar__bg, .pins__card::before, .create-form__upload__figure__preview, .create-form__upload__input {
   position: absolute;
   top: 0;
   right: 0;
@@ -251,7 +251,7 @@ video {
 }
 
 .profile__banner__bg, .banner__showcase__card__bg, .banner__showcase__circle, .pins__card__bg,
-.interests__card__bg {
+.interests__card__bg, .create-form__upload__figure__preview {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -273,6 +273,10 @@ video {
 
 .banner__form__btn {
   border: 0;
+}
+
+.create-form__upload__input, .create-form__upload {
+  cursor: pointer;
 }
 
 .nav-pills .nav-link {
@@ -416,9 +420,7 @@ video {
 }
 
 .form-label {
-  color: #777777;
-  font-weight: 600;
-  font-family: var(--font-primary);
+  color: #000000;
 }
 @media (min-width: 992px) {
   .form-label {
@@ -481,10 +483,35 @@ video {
 .input-group-text:focus-visible {
   color: var(--color-primary);
 }
-.input-group-text:is(.show) .input-group-text__before, .input-group-text:not(.show) .input-group-text__after {
+.input-group-text:is(.active) .input-group-text__before, .input-group-text:not(.active) .input-group-text__after {
   display: none;
 }
 
+.input-group-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.9375rem;
+}
+
+.create-form__upload__input {
+  opacity: 0;
+  z-index: 1;
+}
+@media (max-width: 1399.98px) {
+  .create-form__upload__figure {
+    padding-top: 115%;
+  }
+}
+@media (min-width: 1400px) {
+  .create-form__upload__figure {
+    height: 37.5rem;
+  }
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

@@ -91,18 +91,16 @@
 		</div>
 	</section>
 
-
 	<!-- All Scripts -->
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
-	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
+	<!-- Don't include this script on other pages, this is just for Password toggler functions -->
 	<script>
 		$(document).ready(function () {
-			/* Password toggler function */
 			$('[data-toggle="password"]').on('click', function(){
 				const $currentInput = $(this).siblings('[data-type="password"]')
-				$(this).toggleClass('show')
+				$(this).toggleClass('active')
 				if($currentInput.attr('type') == 'password'){
 					$currentInput.attr('type', 'text')
 				}else{

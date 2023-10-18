@@ -1,11 +1,9 @@
 .form{
     &-label{
-        color: $color-gray;
+        color: $color-black;
         @include min-lg{
             font-size: toRem(18);
         }
-        font-weight: 600;
-        font-family: $font-primary;
     }
     &-control,
     &-select
@@ -48,10 +46,45 @@
         color: $color-primary;
     }
 
-    &:is(.show) .input-group-text__before,
-    &:not(.show) .input-group-text__after
+    &:is(.active) .input-group-text__before,
+    &:not(.active) .input-group-text__after
     {
         display: none;
+    }
+}
+
+.input-group-list{
+    display: flex;
+    flex-direction: column;
+    gap: toRem(15);
+}
+
+.create-form{
+    &__upload{
+        @extend %stacking-context;
+        @extend %cursor-pointer;
+        
+        &__input{
+            @extend %full-width;
+            opacity: 0;
+            z-index: 1;
+            @extend %cursor-pointer;
+        }
+
+        &__figure{
+            @extend %stacking-context;
+            @include max-xl{
+                padding-top: 115%;
+            }
+            @include min-xxl{
+                height: toRem(600);
+            }
+
+            &__preview{
+                @extend %full-width;
+                @extend %select-none;
+            }
+        }
     }
 }
 

@@ -11,6 +11,7 @@
         --bs-body-bg: #FAFAFA;
         --bs-border-color: var(--bs-body-bg);
         color: #3F3C3C;
+        font-size: toRem(16);
         @include min-lg{
             font-size: toRem(20);
         }
@@ -83,6 +84,16 @@
             &__preview{
                 @extend %full-width;
                 @extend %select-none;
+            }
+        }
+    }
+
+    .form{
+        &-control,
+        &-select
+        {
+            @include min-lg{
+                font-size: toRem(18);
             }
         }
     }

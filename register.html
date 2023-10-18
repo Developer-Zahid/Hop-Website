@@ -69,7 +69,7 @@
 							<input type="email" name="email" class="form-control" placeholder="Email Address" pattern="[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required>
 						</div>
 						<div class="mb-3">
-							<input type="number" name="age" class="form-control" placeholder="Age">
+							<input type="text" data-type="date" name="birth_date" class="form-control" placeholder="DD/MM/YYYY">
 						</div>
 						<div class="mb-3">
 							<select name="country" class="form-select">
@@ -95,7 +95,7 @@
 						</div>
 						<button type="submit" class="btn btn-primary w-100 rounded-pill">Register</button>
 					</form>
-					<p class="text-center">Already have an account! <a href="./login.html" class="text-primary">Login</a></p>
+					<p class="form-text-size text-center">Already have an account! <a href="./login.html" class="text-primary">Login</a></p>
 				</div>
 			</div>
 		</div>
@@ -103,9 +103,10 @@
 
 	<!-- All Scripts -->
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+	<script src="./assets/plugins/cleave/js/cleave.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	<!-- Don't include this script on other pages, this is just for Password toggler functions -->
+	<!-- Don't include this script on other pages, this is just for Password toggler & date select with mask functions -->
 	<script>
 		$(document).ready(function () {
 			$('[data-toggle="password"]').on('click', function(){
@@ -116,6 +117,12 @@
 				}else{
 					$currentInput.attr('type', 'password')
 				}
+			})
+
+			new Cleave($('[data-type="date"]'), {
+				date: true,
+				delimiter: '/',
+				datePattern: ['d','m','Y']
 			})
 		})
 	</script>

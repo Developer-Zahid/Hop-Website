@@ -31,6 +31,12 @@
             font-size: toRem(14);
         }
     }
+    &-text-size{
+        font-size: toRem(12);
+        @include min-md{
+            font-size: toRem(16);
+        }
+    }
 }
 
 .form-control:focus + .input-group-text{

@@ -3,12 +3,13 @@
     --bs-nav-pills-link-active-color: var(--bs-nav-link-color);
     --bs-nav-link-hover-color: var(--bs-nav-link-color);
     --bs-nav-pills-link-active-bg: transparent;
-    --bs-nav-link-font-size: #{toRem(20)};
+    @include min-sm{
+        --bs-nav-link-font-size: #{toRem(20)};
+    }
 
-    
     .nav-link{
         padding-top: calc(var(--bs-nav-link-padding-y) * 0.5);
-        padding-bottom: calc(var(--bs-nav-link-padding-y) * 0.5);
+        padding-bottom: 0;
         @extend %shadow-none;
 
         &__text{

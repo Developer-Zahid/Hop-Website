@@ -694,11 +694,15 @@ select {
   --bs-nav-pills-link-active-color: var(--bs-nav-link-color);
   --bs-nav-link-hover-color: var(--bs-nav-link-color);
   --bs-nav-pills-link-active-bg: transparent;
-  --bs-nav-link-font-size: 1.25rem;
+}
+@media (min-width: 576px) {
+  .nav-pills {
+    --bs-nav-link-font-size: 1.25rem;
+  }
 }
 .nav-pills .nav-link {
   padding-top: calc(var(--bs-nav-link-padding-y) * 0.5);
-  padding-bottom: calc(var(--bs-nav-link-padding-y) * 0.5);
+  padding-bottom: 0;
 }
 .nav-pills .nav-link__text {
   display: inline-block;
@@ -1196,7 +1200,7 @@ select {
 }
 .dashboard__navbar {
   position: fixed;
-  z-index: 2;
+  z-index: 9999;
   bottom: 0;
   left: 0;
   overflow: auto;

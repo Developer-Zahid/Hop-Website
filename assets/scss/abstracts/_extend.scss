@@ -91,3 +91,21 @@
 %fw-extrabold{
     font-weight: 800;
 }
+
+%custom-scrollbar{
+    scrollbar-color: $color-primary $color-primary--light;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+        appearance: none;
+        background-color: $color-primary--light;
+        @include max-sm{
+            height: 2px;
+        }
+        @include min-md{
+            width: 8px;
+        }
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-primary;
+    }
+}

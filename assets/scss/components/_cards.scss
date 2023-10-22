@@ -150,3 +150,145 @@
         line-height: 1;
     }
 }
+
+.user{
+    &-media{
+        &__avatar{
+            --_size: #{toRem(80)};
+            @extend %stacking-context;
+            @extend %overflow-hidden;
+            @extend %rounded-circle;
+            @extend %bg-light;
+            width: var(--_size);
+            height: var(--_size);
+
+            &__bg{
+                @extend %full-width;
+            }
+        }
+
+        &__title{
+            font-size: toRem(16);
+            @include min-md{
+                font-size: toRem(18);
+            }
+            @extend %fw-semibold;
+        }
+
+        &__badge{
+            color: #347BCF;
+        }
+
+        &__text,
+        &__item
+        {
+            font-size: toRem(10);
+        }
+        &__text{
+            color: $color-gray;
+            margin-bottom: 5px;
+        }
+
+        &__item{
+            @extend %fw-medium;
+        }
+    }
+
+    &-card{
+        padding: toRem(15);
+        border-radius: toRem(10);
+        background-color: rgba($color-primary-rgb, 0.2);
+    
+        &__portfolio{
+            display: grid;
+            grid-auto-flow: column;
+            height: 100%;
+    
+            &__item{
+                @extend %stacking-context;
+                @extend %overflow-hidden;
+                border-radius: 8px;
+    
+                &::after{
+                    @extend %common-pseudo;
+                    @extend %full-width;
+                    @extend %transition;
+                    background-color: rgba($color-white, $alpha: 0.35);
+    
+                    @include max-md{
+                        display: none
+                    }
+                }
+    
+                &__bg{
+                    @extend %full-width;
+                }
+    
+                @include hover{
+                    &:hover,
+                    &:focus-visible
+                    {
+                        &::after{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+    
+            &--grid-1{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+    
+                .user-card__portfolio{
+                    &__item{
+                        padding-top: 95%;
+                        grid-row: 1;
+    
+                        &:nth-of-type(1){
+                            grid-column: 1 / 5;
+                        }
+                        &:nth-of-type(2){
+                            grid-column: 2 / 6;
+                        }
+                        &:nth-of-type(3){
+                            grid-column: 3 / 7;
+                        }
+                        &:nth-of-type(4){
+                            grid-column: 4 / -1;
+                        }
+                    }
+                }
+            }
+    
+            &--grid-2{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 8px;
+    
+                .user-card__portfolio{
+                    &__item{
+                        padding-top: 100%;
+    
+                        &:nth-of-type(1),
+                        &:nth-of-type(2)
+                        {
+                            grid-column: 1 / 2;
+                        }
+                        &:nth-of-type(3){
+                            grid-column: 2 / -1;
+                            grid-row: 1 / -1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__footer{
+            padding-top: toRem(22);
+
+            .row{
+                --bs-gutter-x: 16px;
+            }
+        }
+    }
+}

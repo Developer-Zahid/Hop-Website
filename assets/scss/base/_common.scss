@@ -177,3 +177,17 @@ video
 {
 	--bs-secondary-rgb: #{$color-secondary-rgb};
 }
+
+.fancybox{
+	&-progress{
+		background-color: $color-primary;
+	}
+
+	&-thumbs__list a::before{
+		border-color: $color-primary;
+	}
+
+	&-thumbs__list{
+		@extend %custom-scrollbar;
+	}
+}

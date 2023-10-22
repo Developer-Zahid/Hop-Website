@@ -20,6 +20,7 @@
         display: flex;
         align-items: center;
         gap: toRem(15);
+        @extend %custom-scrollbar;
         @include min-md{
             top: 0;
             width: var(--_nav-size);
@@ -30,21 +31,6 @@
         @include max-sm{
             right: 0;
             padding: toRem(10);
-        }
-        scrollbar-color: $color-primary $color-primary--light;
-        scrollbar-width: thin;
-        &::-webkit-scrollbar {
-            appearance: none;
-            background-color: $color-primary--light;
-            @include max-sm{
-                height: 2px;
-            }
-            @include min-md{
-                width: 8px;
-            }
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $color-primary;
         }
         
         &__link{

@@ -64,6 +64,8 @@
 .back-btn{
 	display: inline-flex;
 	align-items: center;
+	background-color: transparent;
+	border: 0;
 	@include min-sm{
 		font-size: toRem(20);
 	}

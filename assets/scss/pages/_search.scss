@@ -1,0 +1,200 @@
+.user,
+.story
+{
+    &-slider{
+        display: flex;
+        padding-bottom: var(--_spacing-y);
+        overflow: auto;
+        @extend %custom-scrollbar;
+
+        .simplebar{
+            &-content{
+                display: flex;
+                &::after{
+                    padding-right: 1px;
+                }
+            }
+
+            &-scrollbar::before{
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    &-slide{
+        --_gap-x: #{toRem(10)};
+        @include min-lg{
+            --_gap-x: #{toRem(20)};
+        }
+
+        flex-shrink: 0;
+        display: inline-block;
+        margin-right: var(--_gap-x);
+
+        &:first-of-type{
+            padding-left: var(--_gap-x);
+            @include min-xl{
+                padding-left: calc(3rem / 2);
+            }
+        }
+    }
+}
+
+.story{
+    &-slider{
+        --_spacing-y: #{toRem(7)};
+        @include min-sm{
+            --_spacing-y: #{toRem(10)};
+        }
+        padding-top: var(--_spacing-y);
+    }
+
+    &-avatar{
+        --_avatar-size: #{toRem(70)};
+        --_border-size: #{toRem(2)};
+        
+        @include min-sm{
+            --_avatar-size: #{toRem(90)};
+            --_border-size: #{toRem(3)};
+        }
+        @include min-xxl{
+            --_avatar-size: #{toRem(110)};
+        }
+
+        @extend %stacking-context;
+        @extend %bg-light;
+        @extend %rounded-circle;
+        @extend %overflow-hidden;
+        display: inline-block;
+        width: calc(var(--_avatar-size) - var(--_border-size));
+        height: calc(var(--_avatar-size) - var(--_border-size));
+        margin: var(--_border-size);
+
+        &.active{
+            box-shadow: 0 0 0 var(--_border-size) $color-primary
+        }
+
+        &__bg{
+            @extend %full-width;
+        }
+    }
+}
+
+.searchbar{
+    display: flex;
+    width: 100%;
+    max-width: toRem(600);
+    border-radius: 7px;
+    position: relative;
+    @extend %bg-light;
+
+    &__input,
+    &__btn
+    {
+        color: $color-white;
+        background-color: transparent;
+        border: 0;
+    }
+
+    &__input{
+        color: $color-gray-light;
+        padding-top: toRem(12);
+        padding-bottom: toRem(12);
+        padding-left: toRem(25);
+        width: 100%;
+        &::placeholder{
+            opacity: 1;
+            color: currentColor;
+        }
+    }
+
+    &__btn{
+        color: $color-black;
+        font-size: toRem(24);
+        background-color: transparent;
+        line-height: 1;
+        padding: 5px toRem(20) 5px toRem(10);
+        
+        &:active{
+            color: $color-primary;
+        }
+        
+        @include hover{
+            transition: color .2s ease-in-out;
+
+            &:hover,
+            &:focus-visible
+            {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.user{
+    &-slider{
+        --_spacing-y: #{toRem(15)};
+        @include min-sm{
+            --_spacing-y: #{toRem(20)};
+        }
+
+        .user-card{
+            max-width: toRem(340);
+        }
+    }
+
+    &-slide{
+        .user-card{
+            margin-bottom: 0;
+        }
+
+        > {
+            .user-media{
+                max-width: toRem(320);
+            }
+        }
+    }
+}
+
+.search-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include min-xs{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @include min-md{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    @include min-lg{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    gap: 5px;
+
+    &--single{
+        .search-grid__item{
+            @include min-lg{
+                &:first-of-type{
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+                &:last-of-type{
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+    }
+
+    &__item{
+        @extend %stacking-context;
+        @extend %bg-light;
+        @extend %overflow-hidden;
+        border-radius: 3px;
+        height: toRem(125);
+        margin-bottom: 0;
+    }
+
+    &__result{
+        @extend %full-width;
+    }
+}

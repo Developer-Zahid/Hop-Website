@@ -351,30 +351,30 @@ video {
 }
 
 .user-slider,
-.story-slider, .comment-area, .dashboard__navbar, .comment-form__field__input, .fancybox-thumbs__list {
+.story-slider, .comment-area, .dashboard__navbar, .comment-form__field__input, html, .fancybox-thumbs__list {
   scrollbar-color: var(--color-primary) var(--color-primary--light);
   scrollbar-width: thin;
 }
 .user-slider::-webkit-scrollbar,
-.story-slider::-webkit-scrollbar, .comment-area::-webkit-scrollbar, .dashboard__navbar::-webkit-scrollbar, .comment-form__field__input::-webkit-scrollbar, .fancybox-thumbs__list::-webkit-scrollbar {
+.story-slider::-webkit-scrollbar, .comment-area::-webkit-scrollbar, .dashboard__navbar::-webkit-scrollbar, .comment-form__field__input::-webkit-scrollbar, html::-webkit-scrollbar, .fancybox-thumbs__list::-webkit-scrollbar {
   -webkit-appearance: none;
           appearance: none;
   background-color: var(--color-primary--light);
 }
 @media (max-width: 767.98px) {
   .user-slider::-webkit-scrollbar,
-  .story-slider::-webkit-scrollbar, .comment-area::-webkit-scrollbar, .dashboard__navbar::-webkit-scrollbar, .comment-form__field__input::-webkit-scrollbar, .fancybox-thumbs__list::-webkit-scrollbar {
+  .story-slider::-webkit-scrollbar, .comment-area::-webkit-scrollbar, .dashboard__navbar::-webkit-scrollbar, .comment-form__field__input::-webkit-scrollbar, html::-webkit-scrollbar, .fancybox-thumbs__list::-webkit-scrollbar {
     height: 2px;
   }
 }
 @media (min-width: 768px) {
   .user-slider::-webkit-scrollbar,
-  .story-slider::-webkit-scrollbar, .comment-area::-webkit-scrollbar, .dashboard__navbar::-webkit-scrollbar, .comment-form__field__input::-webkit-scrollbar, .fancybox-thumbs__list::-webkit-scrollbar {
+  .story-slider::-webkit-scrollbar, .comment-area::-webkit-scrollbar, .dashboard__navbar::-webkit-scrollbar, .comment-form__field__input::-webkit-scrollbar, html::-webkit-scrollbar, .fancybox-thumbs__list::-webkit-scrollbar {
     width: 8px;
   }
 }
 .user-slider::-webkit-scrollbar-thumb,
-.story-slider::-webkit-scrollbar-thumb, .comment-area::-webkit-scrollbar-thumb, .dashboard__navbar::-webkit-scrollbar-thumb, .comment-form__field__input::-webkit-scrollbar-thumb, .fancybox-thumbs__list::-webkit-scrollbar-thumb {
+.story-slider::-webkit-scrollbar-thumb, .comment-area::-webkit-scrollbar-thumb, .dashboard__navbar::-webkit-scrollbar-thumb, .comment-form__field__input::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb, .fancybox-thumbs__list::-webkit-scrollbar-thumb {
   background-color: var(--color-primary);
 }
 

@@ -39,6 +39,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/simplebar/css/simplebar.min.css" />
 	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
@@ -90,16 +91,16 @@
 		</nav>
 		<main class="dashboard__main">
 			<div class="container-fluid container-xxl gx-xl-5">
-				<div class="p-3 rounded-5 shadow my-4">
+				<div class="pin-case">
 					<div class="row">
-						<div class="col-lg-6 col-md-5">
-							<figure class="create-form__upload__figure rounded-5 overflow-hidden mb-md-0">
+						<div class="col-lg-6 px-0-md">
+							<figure class="create-form__upload__figure rounded-top-lg-5 rounded-bottom-5 overflow-hidden mb-lg-0">
 								<img class="create-form__upload__figure__preview" src="./assets/images/pins/pin-1-lg.png" alt="pin" loading="lazy">
 							</figure>
 						</div>
-						<div class="col-lg-6 col-md-7">
+						<div class="col-lg-6 d-flex flex-column">
 							<div class="d-flex align-items-center justify-content-between pb-2">
-								<button type="button" class="icon-btn active" data-toggle="active">
+								<button type="button" class="flex-shrink-0 icon-btn active" data-toggle="active">
 									<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
 									</svg>
@@ -118,19 +119,154 @@
 									</svg>
 								</a>
 							</div>
-							<div>
+							<div class="comment-area simple-bar">
 								<h5>Buddha</h5>
 								<div class="text-muted mb-3" data-parent="show-more">
 									<span data-text="before">Buddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyesBuddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyes</span>
 									<span data-text="after">Buddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyesBuddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyes Buddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyesBuddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyes this is the full text</span>
 									<button data-toggle="show-more" type="button" class="text-btn text-muted">... <span class="text-black">show</span></button>
 								</div>
+								<div class="user-object d-flex mb-3">
+									<figure class="user-object__avatar flex-shrink-0 mb-0">
+									  	<img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-3.png" alt="avatar" loading="lazy">
+									</figure>
+									<div class="flex-grow-1 ms-3">
+										<div class="d-flex align-items-center justify-content-between">
+											<div>
+												<h5 class="user-object__title d-block">Louie Gottlieb</h5>
+												<span class="user-object__text">1.5k followers</span>
+											</div>
+											<a href="#!" class="btn btn-secondary rounded-pill">Follow</a>
+										</div>
+									</div>
+								</div>
+								<div class="user-object d-flex mb-3">
+									<figure class="user-object__avatar flex-shrink-0 mb-0">
+									  	<img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+									</figure>
+									<div class="flex-grow-1 ms-3">
+										<h5 class="user-object__title">Tony Adigun</h5>
+										<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+										<div class="d-flex align-items-center pt-1">
+											<button type="button" class="text-btn text-black"><small>Reply</small></button>
+											<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+												<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="user-object d-flex mb-3">
+									<figure class="user-object__avatar flex-shrink-0 mb-0">
+									  	<img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+									</figure>
+									<div class="flex-grow-1 ms-3">
+										<h5 class="user-object__title">Tony Adigun</h5>
+										<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+										<div class="d-flex align-items-center pt-1">
+											<button type="button" class="text-btn text-black"><small>Reply</small></button>
+											<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+												<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-comment="more">
+									<div class="user-object d-flex mb-3">
+										<figure class="user-object__avatar flex-shrink-0 mb-0">
+											  <img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+										</figure>
+										<div class="flex-grow-1 ms-3">
+											<h5 class="user-object__title">Tony Adigun</h5>
+											<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+											<div class="d-flex align-items-center pt-1">
+												<button type="button" class="text-btn text-black"><small>Reply</small></button>
+												<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+													<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="user-object d-flex mb-3">
+										<figure class="user-object__avatar flex-shrink-0 mb-0">
+											  <img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+										</figure>
+										<div class="flex-grow-1 ms-3">
+											<h5 class="user-object__title">Tony Adigun</h5>
+											<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+											<div class="d-flex align-items-center pt-1">
+												<button type="button" class="text-btn text-black"><small>Reply</small></button>
+												<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+													<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="user-object d-flex mb-3">
+										<figure class="user-object__avatar flex-shrink-0 mb-0">
+											  <img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+										</figure>
+										<div class="flex-grow-1 ms-3">
+											<h5 class="user-object__title">Tony Adigun</h5>
+											<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+											<div class="d-flex align-items-center pt-1">
+												<button type="button" class="text-btn text-black"><small>Reply</small></button>
+												<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+													<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="user-object d-flex mb-3">
+										<figure class="user-object__avatar flex-shrink-0 mb-0">
+											  <img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+										</figure>
+										<div class="flex-grow-1 ms-3">
+											<h5 class="user-object__title">Tony Adigun</h5>
+											<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+											<div class="d-flex align-items-center pt-1">
+												<button type="button" class="text-btn text-black"><small>Reply</small></button>
+												<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+													<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="user-object d-flex mb-3">
+										<figure class="user-object__avatar flex-shrink-0 mb-0">
+											  <img class="user-object__avatar__bg" src="./assets/images/avatars/users/avatar-4.png" alt="avatar" loading="lazy">
+										</figure>
+										<div class="flex-grow-1 ms-3">
+											<h5 class="user-object__title">Tony Adigun</h5>
+											<span class="user-object__text">The longing for Paradise is man's longing not to be man.</span>
+											<div class="d-flex align-items-center pt-1">
+												<button type="button" class="text-btn text-black"><small>Reply</small></button>
+												<button type="button" class="icon-btn icon-btn--sm" data-toggle="active">
+													<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="border-top pt-2">
+							<div class="border-top pt-3 mt-auto">
 								<div class="d-flex align-items-center justify-content-between">
 									<div>
 										<strong>7 Comments</strong>
-										<button type="button" class="text-btn text-muted"><small>See More</small></button>
+										<button data-toggle="more-comment" type="button" class="text-btn text-muted"><small class="text-btn__before">See More</small><small class="text-btn__after">See Less</small></button>
 									</div>
 									<button type="button" class="icon-btn" data-toggle="active">
 										<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,6 +292,210 @@
 					</div>
 				</div>
 			</div>
+			<div class="container-fluid gx-xl-5">
+				<div class="pins profile">
+					<div class="pinterest-grid">
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-2.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-2.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-4.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-4.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-1.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-5.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<video class="pins__card__bg" poster="./assets/images/pins/pin-1.png" muted autoplay loop playsinline preload="auto">
+									<source src="./assets/videos/pins/pin-1.mp4" type="video/mp4">
+								</video>
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-1.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-6.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-3.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-3.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pinterest-grid__column">
+							<a href="#!" class="pins__card">
+								<img class="pins__card__bg" src="./assets/images/pins/pin-6.png" alt="pins" loading="lazy">
+								<div class="pins__card__content">
+									<h3 class="pins__card__title">brightness adjustment Animation</h3>
+									<div class="pins__card__profile">
+										<div class="pins__card__profile__avatar">
+											<img class="pins__card__profile__avatar__bg" src="./assets/images/avatars/pins/avatar-4.png" alt="avatar" width="52" height="52" loading="lazy">
+										</div>
+										<p class="pins__card__profile__text">Lorem ipsum dolor sit amet consectetur.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	</div>
 
@@ -163,9 +503,14 @@
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	<!-- Don't include this script on other pages, this is for functions -->
+	<!-- Don't include this script on other pages, this is for just current page functions -->
+	<script src="./assets/plugins/simplebar/js/simplebar.min.js"></script>
 	<script>
 		$(document).ready(function () {
+			// custom scrollbar function
+			$('.simple-bar').each((index, element) => new SimpleBar(element, { autoHide: true }))
+
+			// hide or show comment send button function
 			$('[data-comment="input"]').on('input', function(){
 				const $currentSendBtn = $(this).closest('[data-comment="parent"]').find('[data-comment="btn"]')
 				let currentValue = $(this).val().trim()
@@ -176,12 +521,19 @@
 				}
 			})
 
+			// show more text function
 			$('[data-toggle="show-more"]').on('click', function(){
 				const $beforeText = $(this).closest('[data-parent="show-more"]').find('[data-text="before"]')
 				const $afterText = $(this).closest('[data-parent="show-more"]').find('[data-text="after"]')
 				$afterText.show()
 				$beforeText.hide()
 				$(this).hide()
+			})
+
+			// show more comment function
+			$('[data-toggle="more-comment"]').on('click', function(){
+				$(this).toggleClass('active')
+				$('[data-comment="more"]').toggle()
 			})
 		})
 	</script>

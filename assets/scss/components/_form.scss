@@ -53,8 +53,8 @@
         color: $color-primary;
     }
 
-    &:is(.active) .input-group-text__before,
-    &:not(.active) .input-group-text__after
+    &:is(.active) &__before,
+    &:not(.active) &__after
     {
         display: none;
     }
@@ -82,6 +82,9 @@
             @extend %stacking-context;
             @include max-xl{
                 padding-top: 115%;
+            }
+            @include max-md{
+                padding-top: 60%;
             }
             @include min-xxl{
                 height: toRem(600);
@@ -186,6 +189,11 @@ input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration
 {
 	display: none;
+}
+
+input:-webkit-autofill{
+	-webkit-text-fill-color: unset;
+	transition: background-color 5000s;
 }
 
 select{

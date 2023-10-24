@@ -373,10 +373,11 @@
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 	
-	<!-- Don't include this script on other pages, this is just for swipe to change tabs functions -->
+	<!-- Don't include this script on other pages, this is just for current page functions -->
 	<script src="./assets/plugins/touchSwipe/js/jquery.touchSwipe.min.js"></script>
 	<script>
 		$(document).ready(function () {
+			// swipe to change tabs function
 			$(".tab-content").swipe( {
 				swipeLeft: function(event, direction, distance, duration, fingerCount) {
 					$(".nav-pills .nav-link.active").next('.nav-link').tab('show');

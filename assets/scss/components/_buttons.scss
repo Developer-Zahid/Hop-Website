@@ -2,9 +2,13 @@
 .btn{
 	--bs-btn-padding-y: #{toRem(10)};
 	--bs-btn-padding-x: #{toRem(25)};
-	--bs-btn-font-size: #{toRem(16)};
+	--bs-btn-font-size: #{toRem(14)};
 	--bs-border-radius: #{toRem(8)};
 	@include min-md{
+		--bs-btn-font-size: #{toRem(16)};
+		--bs-border-radius: #{toRem(15)};
+	}
+	@include min-xxl{
 		--bs-btn-padding-y: #{toRem(15)};
 		--bs-btn-padding-x: #{toRem(30)};
 		--bs-btn-font-size: #{toRem(18)};
@@ -66,10 +70,18 @@
 	align-items: center;
 	background-color: transparent;
 	border: 0;
+	gap: toRem(6);
 	@include min-sm{
 		font-size: toRem(20);
 	}
-	gap: toRem(6);
+}
+
+.favorite-btn,
+.icon-btn
+{
+	&:not(.active) &__icon{
+		fill: transparent;
+	}
 }
 
 .favorite-btn{
@@ -90,12 +102,6 @@
 		--_size: #{toRem(50)};
 		font-size: toRem(22);
 	}
-
-	&:not(.active){
-		.favorite-btn__icon{
-			fill: transparent;
-		}
-	}
 }
 
 .icon-btn{
@@ -105,21 +111,27 @@
 	border: 0;
 	padding: 3px;
 	line-height: 0;
-
-	&:not(.active){
-		.icon-btn__icon{
-			fill: transparent;
-		}
+	
+	&--sm{
+		font-size: toRem(16);
 	}
 }
 
 .text-btn{
+	display: inline-flex;
+	align-items: center;
 	font-size: toRem(16);
 	padding: 5px;
 	background-color: transparent;
 	border: 0;
 	line-height: 1;
 	@extend %fw-medium;
+
+	&:is(.active) &__before,
+    &:not(.active) &__after
+    {
+        display: none;
+    }
 }
 
 .scroll-top{

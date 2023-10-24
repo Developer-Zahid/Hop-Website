@@ -103,12 +103,13 @@
 
 	<!-- All Scripts -->
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
-	<script src="./assets/plugins/cleave/js/cleave.min.js"></script>
 	<script src="./assets/js/script.js"></script>
-
-	<!-- Don't include this script on other pages, this is just for Password toggler & date select with mask functions -->
+	
+	<!-- Don't include this script on other pages, this is just for current page functions -->
+	<script src="./assets/plugins/cleave/js/cleave.min.js"></script>
 	<script>
 		$(document).ready(function () {
+			// Password toggler function
 			$('[data-toggle="password"]').on('click', function(){
 				const $currentInput = $(this).siblings('[data-type="password"]')
 				$(this).toggleClass('active')
@@ -119,6 +120,7 @@
 				}
 			})
 
+			// date field input mask function
 			new Cleave($('[data-type="date"]'), {
 				date: true,
 				delimiter: '/',

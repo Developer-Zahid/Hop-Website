@@ -53,11 +53,6 @@ button:active
 	outline: none;
 }
 
-input:-webkit-autofill{
-	-webkit-text-fill-color: unset;
-	transition: background-color 5000s;
-}
-
 img,
 svg,
 video
@@ -79,6 +74,21 @@ video
 @include min-xxl {
 	.container{
 		max-width: toRem(1240)
+	}
+}
+
+@include min-lg{
+	.rounded-top-lg-5{
+		border-top-right-radius: var(--bs-border-radius-xxl);
+		border-top-left-radius: var(--bs-border-radius-xxl);
+	}
+}
+
+
+@include max-md{
+	.px-0-md{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -192,16 +202,60 @@ video
 	}
 }
 
-// [data-parent="show-more"]{
-// 	white-space: pre-line;
-// }
-
-[data-text="before"],
-[data-text="after"]
-{
-	font-size: toRem(16);
+.simplebar{
+	&-scrollbar::before{
+		background-color: $color-primary;
+	}
+}
+	
+[data-parent="show-more"]{
+	// 	white-space: pre-line;
+	
+	max-height: 100%;
+	*{
+		font-size: toRem(14);
+		@include min-md{
+			font-size: toRem(16);
+		}
+	}
 }
 
-[data-text="after"]{
+[data-text="after"],
+[data-comment="more"]
+{
 	display: none;
+}
+
+.user-object{
+	&__avatar{
+		--_size: #{toRem(50)};
+		width: var(--_size);
+		height: var(--_size);
+		@extend %stacking-context;
+        @extend %overflow-hidden;
+        @extend %rounded-circle;
+
+		&__bg{
+			@extend %full-width;
+		}
+	}
+
+	&__title,
+	&__text
+	{
+		font-size: toRem(14);
+		@include min-md{
+			font-size: toRem(18);
+		}
+		margin-bottom: 0;
+	}
+	
+	&__title{
+		@extend %fw-medium;
+		display: inline-block;
+	}
+
+	&__text{
+		color: $color-gray;
+	}
 }

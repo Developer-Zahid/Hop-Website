@@ -61,7 +61,7 @@
 						<h1 class="login__title">Login Now</h1>
 						<p class="login__text">Lorem ipsum dolor sit amet consectetur.</p>
 					</div>
-					<form action="#!" class="mb-3">
+					<form action="/search.html" class="mb-3">
 						<div class="mb-3">
 							<input type="text" name="username" class="form-control" placeholder="username" required>
 						</div>
@@ -95,9 +95,10 @@
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	<!-- Don't include this script on other pages, this is just for Password toggler functions -->
+	<!-- Don't include this script on other pages, this is just for current page functions -->
 	<script>
 		$(document).ready(function () {
+			// Password toggler function
 			$('[data-toggle="password"]').on('click', function(){
 				const $currentInput = $(this).siblings('[data-type="password"]')
 				$(this).toggleClass('active')

@@ -194,10 +194,10 @@
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	<!-- Don't include this script on other pages, this is for (Show selected file preview) and (Add Or Remove input) functions -->
+	<!-- Don't include this script on other pages, this is for current page functions -->
 	<script>
 		$(document).ready(function () {
-			// Show selected file preview
+			// Show selected file preview function
 			function loadFile(event, outputParent) {
 				const $outputParent = outputParent
 				const selectedFile = event.target.files[0]
@@ -214,7 +214,7 @@
 				loadFile(e, $(this).closest('[data-file-uploader="parent"]'))
 			})
 
-			// Add Or Remove input
+			// Add Or Remove input function
 			$(document).on('click', '[data-input="add"]', function(){
 				const $currentParent = $(this).closest('[data-input="block"]')
 				const newCloneElement = $currentParent.clone()

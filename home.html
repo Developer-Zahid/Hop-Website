@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<!-- Primary Meta Tags -->
-	<title>Create Pin | Hop Website</title>
+	<title>Pin Details | Hop Website</title>
 	<meta name="author" content="Developer Zahid">
 	<meta name="title" content="Hop Website" />
 	<meta name="description" content="Hop Website" />
@@ -43,15 +43,15 @@
 </head>
 <body>
 	<!-- Preloader Section -->
-	<div class="preloader position-fixed w-100 h-100 bg-white">
+	<!-- <div class="preloader position-fixed w-100 h-100 bg-white">
 		<div class="preloader__container w-100 h-100 d-flex align-items-center justify-content-center p-2">
 			<img class="user-select-none" src="./assets/images/logo/logo-black.png" alt="logo" height="100">
 		</div>
-	</div>
+	</div> -->
 
 	<div class="dashboard">
 		<nav class="dashboard__navbar">
-			<a href="/home.html" class="dashboard__navbar__link" aria-label="home">
+			<a href="/home.html" class="dashboard__navbar__link active" aria-label="home">
 				<svg class="dashboard__navbar__link__icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path class="dashboard__navbar__link__icon__after" d="M14.0635 0.664033C13.016 -0.219717 11.484 -0.219717 10.4365 0.664033L1.99895 7.78221C1.36551 8.3166 1 9.10315 1 9.9319V21.5633C1 22.7714 1.97938 23.7508 3.1875 23.7508H6.9375C8.14562 23.7508 9.125 22.7714 9.125 21.5633V16.5601C9.125 15.7109 9.80225 15.0201 10.6461 14.9981H13.8539C14.6978 15.0201 15.375 15.7109 15.375 16.5601V21.5633C15.375 22.7714 16.3544 23.7508 17.5625 23.7508H21.3125C22.5206 23.7508 23.5 22.7714 23.5 21.5633V9.9319C23.5 9.10315 23.1345 8.3166 22.501 7.78221L14.0635 0.664033Z" fill="currentColor"/>
 					<path class="dashboard__navbar__link__icon__before" d="M10.4369 0.662417C11.4843 -0.220808 13.0157 -0.220808 14.0631 0.66243L22.5006 7.77755C23.1343 8.31195 23.5 9.09868 23.5 9.92763V21.5649C23.5 22.7731 22.5206 23.7524 21.3125 23.7524H16.9375C15.7294 23.7524 14.75 22.7731 14.75 21.5649V15.3061C14.75 15.1336 14.6101 14.9936 14.4375 14.9936H10.0625C9.88988 14.9936 9.74999 15.1336 9.74999 15.3061V21.5649C9.74999 22.7731 8.77062 23.7524 7.5625 23.7524H3.1875C1.97938 23.7524 1 22.7731 1 21.5649V9.92763C1 9.09868 1.36569 8.31195 1.9994 7.77755L10.4369 0.662417ZM12.8544 2.0958C12.5052 1.80139 11.9948 1.80139 11.6456 2.0958L3.20814 9.21094C2.9969 9.38907 2.875 9.65132 2.875 9.92763V21.5649C2.875 21.7376 3.01491 21.8774 3.1875 21.8774H7.5625C7.73509 21.8774 7.87499 21.7376 7.87499 21.5649V15.3061C7.87499 14.0979 8.85438 13.1186 10.0625 13.1186H14.4375C15.6456 13.1186 16.625 14.0979 16.625 15.3061V21.5649C16.625 21.7376 16.7649 21.8774 16.9375 21.8774H21.3125C21.4851 21.8774 21.625 21.7376 21.625 21.5649V9.92763C21.625 9.65132 21.5031 9.38907 21.2919 9.21094L12.8544 2.0958Z" fill="currentColor"/>
@@ -90,102 +90,71 @@
 		</nav>
 		<main class="dashboard__main">
 			<div class="container-fluid container-xxl gx-xl-5">
-				<section class="py-4">
-					<div class="pb-4">
-						<a href="#!" class="back-btn text-black">
-							<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
-								<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-							</svg>
-							<span class="back-btn__text">Create Pin</span>
-						</a>
-					</div>
-					<form action="#!" class="create-form">
-						<div class="row">
-							<div class="col-lg-6">
-								<label class="create-form__upload d-block" data-file-uploader="parent">
-									<input type="file" name="pin_preview" class="create-form__upload__input" data-file-uploader="input" accept="image/*,video/*" required>
-									<figure class="create-form__upload__figure rounded-5 overflow-hidden" data-file-uploader="frame">
-										<img class="create-form__upload__figure__preview" data-file-uploader="preview" src="./assets/images/pins/pin-1-lg.png" alt="pin" loading="lazy">
-									</figure>
-								</label>
+				<div class="p-3 rounded-5 shadow my-4">
+					<div class="row">
+						<div class="col-lg-6 col-md-5">
+							<figure class="create-form__upload__figure rounded-5 overflow-hidden mb-md-0">
+								<img class="create-form__upload__figure__preview" src="./assets/images/pins/pin-1-lg.png" alt="pin" loading="lazy">
+							</figure>
+						</div>
+						<div class="col-lg-6 col-md-7">
+							<div class="d-flex align-items-center justify-content-between pb-2">
+								<button type="button" class="icon-btn active" data-toggle="active">
+									<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+									</svg>
+								</button>
+								<div>
+									<a href="#!" class="btn btn-secondary rounded-pill">View</a>
+									<a href="#!" class="btn btn-primary rounded-pill">Save</a>
+								</div>
+								<a href="#!" class="icon-btn">
+									<svg width="1em" height="1em" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M35.4161 6.66656C35.4161 9.6582 32.9912 12.0834 29.9996 12.0834C27.0079 12.0834 24.583 9.6582 24.583 6.66656C24.583 3.67523 27.0079 1.25 29.9996 1.25C32.9912 1.25 35.4161 3.67523 35.4161 6.66656Z" fill="currentColor"/>
+										<path d="M29.9996 13.3334C26.3228 13.3334 23.333 10.3434 23.333 6.66656C23.333 2.99008 26.3229 0 29.9996 0C33.6763 0 36.6661 2.99008 36.6661 6.66656C36.6661 10.3434 33.6763 13.3334 29.9996 13.3334ZM29.9996 2.5C27.7013 2.5 25.833 4.37016 25.833 6.66656C25.833 8.96328 27.7013 10.8334 29.9996 10.8334C32.2979 10.8334 34.1661 8.96328 34.1661 6.66656C34.1661 4.37016 32.2979 2.5 29.9996 2.5ZM35.4161 33.3334C35.4161 36.3248 32.9912 38.75 29.9996 38.75C27.0079 38.75 24.583 36.3248 24.583 33.3334C24.583 30.3418 27.0079 27.9166 29.9996 27.9166C32.9912 27.9166 35.4161 30.3418 35.4161 33.3334Z" fill="currentColor"/>
+										<path d="M30 39.9986C26.3232 39.9986 23.3334 37.0085 23.3334 33.332C23.3334 29.6552 26.3233 26.6652 30 26.6652C33.6767 26.6652 36.6666 29.6552 36.6666 33.332C36.6666 37.0085 33.6767 39.9986 30 39.9986ZM30 29.1652C27.7017 29.1652 25.8334 31.0353 25.8334 33.332C25.8334 35.6285 27.7017 37.4986 30 37.4986C32.2983 37.4986 34.1666 35.6284 34.1666 33.332C34.1666 31.0353 32.2983 29.1652 30 29.1652ZM12.0834 19.9986C12.0834 22.9902 9.6582 25.4152 6.66656 25.4152C3.67523 25.4152 1.25 22.9902 1.25 19.9986C1.25 17.007 3.67523 14.582 6.66656 14.582C9.6582 14.582 12.0834 17.007 12.0834 19.9986Z" fill="currentColor"/>
+										<path d="M6.66656 26.6652C2.99008 26.6652 0 23.6753 0 19.9986C0 16.3219 2.99008 13.332 6.66656 13.332C10.3434 13.332 13.3334 16.3219 13.3334 19.9986C13.3334 23.6753 10.3434 26.6652 6.66656 26.6652ZM6.66656 15.832C4.36828 15.832 2.5 17.7019 2.5 19.9986C2.5 22.2953 4.36828 24.1652 6.66656 24.1652C8.96516 24.1652 10.8334 22.2953 10.8334 19.9986C10.8334 17.7019 8.96516 15.832 6.66656 15.832Z" fill="currentColor"/>
+										<path d="M10.6019 19.199C10.0218 19.199 9.45841 18.8971 9.15177 18.3573C8.69669 17.559 8.97685 16.5406 9.77521 16.0838L25.2401 7.26722C26.0383 6.80886 27.0567 7.08902 27.5135 7.89042C27.9686 8.6887 27.6885 9.70714 26.89 10.1639L11.425 18.9805C11.1744 19.1238 10.8906 19.1992 10.6019 19.199ZM26.0652 32.949C25.785 32.949 25.5018 32.8788 25.2418 32.7305L9.77685 23.9139C8.97841 23.4589 8.69864 22.4405 9.15364 21.6404C9.60677 20.8405 10.6268 20.5589 11.4269 21.0172L26.892 29.8338C27.6904 30.2888 27.9701 31.3072 27.5151 32.1073C27.2069 32.6471 26.6436 32.949 26.0653 32.949H26.0652Z" fill="currentColor"/>
+									</svg>
+								</a>
 							</div>
-							<div class="col-lg-6">
-								<div class="mb-3">
-									<label class="form-label" for="title">Add a title <span class="text-danger">*</span></label>
-									<input type="text" name="title" id="title" class="form-control" placeholder="Write a title" required>
+							<div>
+								<h5>Buddha</h5>
+								<div class="text-muted mb-3" data-parent="show-more">
+									<span data-text="before">Buddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyesBuddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyes</span>
+									<span data-text="after">Buddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyesBuddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyes Buddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyesBuddha with the mesmerizing blend of realistic detail and mystical elements. His closed eyes this is the full text</span>
+									<button data-toggle="show-more" type="button" class="text-btn text-muted">... <span class="text-black">show</span></button>
 								</div>
-								<div class="mb-3">
-									<label class="form-label" for="description">Add the description <span class="text-danger">*</span></label>
-									<textarea class="form-control" name="description" id="description" rows="1" placeholder="Write a description" required></textarea>
-								</div>
-								<div class="mb-3">
-									<label class="form-label" for="user_id">User id</label>
-									<input type="text" name="user_id" id="user_id" class="form-control" placeholder="Your user id">
-								</div>
-								<div class="mb-3">
-									<label class="form-label">Destination website</label>
-									<div class="input-group-list">
-										<div class="input-group" data-input="block">
-											<input data-input="current" type="url" name="website_links[]" class="form-control border-end-0" placeholder="Add a link">
-											<button type="button" class="input-group-text" data-input="add">
-												<span class="input-group-text__before">
-													<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-														<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-													</svg>
-												</span>
-												<span class="input-group-text__after">
-													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
-														<path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
-													</svg>
-												</span>
-											</button>
-										</div>
+							</div>
+							<div class="border-top pt-2">
+								<div class="d-flex align-items-center justify-content-between">
+									<div>
+										<strong>7 Comments</strong>
+										<button type="button" class="text-btn text-muted"><small>See More</small></button>
 									</div>
+									<button type="button" class="icon-btn" data-toggle="active">
+										<svg width="1em" height="1em" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path class="icon-btn__icon" d="M12.5889 20.6872L12.5882 20.6877C12.4286 20.7896 12.2695 20.8793 12.1332 20.9402C12.0763 20.9656 12.0319 20.9821 12 20.9921C11.9681 20.9821 11.9237 20.9656 11.8668 20.9402C11.7305 20.8793 11.5714 20.7896 11.4118 20.6877C8.1633 18.6127 5.54102 16.3878 3.74013 14.1088C1.93953 11.8302 1 9.55086 1 7.33725C1 3.51028 3.62218 1 6.81818 1C8.75438 1 10.2235 2.03743 11.1208 3.69315L11.9901 5.29711L12.8746 3.70145C13.7985 2.03466 15.2607 1 17.1937 1C20.3767 1 23 3.50912 23 7.33725C23 9.55154 22.0629 11.831 20.2641 14.1091C18.4649 16.3877 15.8429 18.6125 12.5889 20.6872Z" fill="currentColor" stroke="currentColor" stroke-width="2"></path>
+										</svg>
+									</button>
 								</div>
-								<div class="mb-3">
-									<label class="form-label">Category</label>
-									<div class="input-group-list">
-										<div class="input-group" data-input="block">
-											<input data-input="current" type="text" name="category[]" class="form-control border-end-0" placeholder="Add a category">
-											<button type="button" class="input-group-text" data-input="add">
-												<span class="input-group-text__before">
-													<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-														<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-													</svg>
-												</span>
-												<span class="input-group-text__after">
-													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
-														<path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
-													</svg>
-												</span>
-											</button>
-										</div>
+								<form action="#!" class="comment-form d-flex align-items-center">
+									<div class="comment-form__avatar flex-shrink-0">
+										<img class="comment-form__avatar__bg" src="./assets/images/avatars/profiles/avatar-1.png" alt="avatar" loading="lazy">
 									</div>
-								</div>
-								<div class="mb-3">
-									<label class="form-label" for="privacy">Privacy setting</label>
-									<select name="privacy" id="privacy" class="form-select">
-										<option value="Public/private/followers view only" selected>Public/private/followers view only</option>
-										<option value="Public view only">Public view only</option>
-										<option value="Private view only">Private view only</option>
-										<option value="Followers view only">Followers view only</option>
-									</select>
-									<!-- <a href="#!" class="input-group">
-										<span class="form-control border-end-0">Public/private/followers view only</span>
-										<span type="button" class="input-group-text">
-											<span class="input-group-text__before">
-												<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-													<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-												</svg>
-											</span>
-										</span>
-									</a> -->
-								</div>
-								<button type="submit" class="btn btn-primary w-100">Submit</button>
+									<div data-comment="parent" class="comment-form__field d-flex flex-grow-1 ">
+										<textarea data-comment="input" class="comment-form__field__input w-100 border-0" name="comment" placeholder="Add a comment" required></textarea>
+										<button data-comment="btn" type="submit" class="comment-form__field__btn text-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+												<path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+											</svg>
+										</button>
+									</div>
+								</form>
 							</div>
 						</div>
-					</form>
-				</section>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
@@ -194,38 +163,25 @@
 	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 
-	<!-- Don't include this script on other pages, this is for (Show selected file preview) and (Add Or Remove input) functions -->
+	<!-- Don't include this script on other pages, this is for functions -->
 	<script>
 		$(document).ready(function () {
-			// Show selected file preview
-			function loadFile(event, outputParent) {
-				const $outputParent = outputParent
-				const selectedFile = event.target.files[0]
-				let $output = $outputParent.find('[data-file-uploader="frame"]')
-				
-				const mimeType = selectedFile.type;
-				if (mimeType.startsWith("image/")) {
-					$output.html(`<img class="create-form__upload__figure__preview" data-file-uploader="preview" src="${URL.createObjectURL(event.target.files[0])}" alt="pin" loading="lazy">`)
-				} else if (mimeType.startsWith("video/")) {
-					$output.html(`<video class="create-form__upload__figure__preview" data-file-uploader="preview" muted autoplay loop playsinline preload="auto"><source src="${URL.createObjectURL(event.target.files[0])}" type="${mimeType}"></video>`)
+			$('[data-comment="input"]').on('input', function(){
+				const $currentSendBtn = $(this).closest('[data-comment="parent"]').find('[data-comment="btn"]')
+				let currentValue = $(this).val().trim()
+				if(currentValue != ''){
+					$currentSendBtn.show()
+				}else{
+					$currentSendBtn.hide()
 				}
-			}
-			$('[data-file-uploader="input"]').on('change', function(e){
-				loadFile(e, $(this).closest('[data-file-uploader="parent"]'))
 			})
 
-			// Add Or Remove input
-			$(document).on('click', '[data-input="add"]', function(){
-				const $currentParent = $(this).closest('[data-input="block"]')
-				const newCloneElement = $currentParent.clone()
-				newCloneElement.find('[data-input="current"]').val("")
-				$currentParent.after(newCloneElement)
-				newCloneElement.find('[data-input="current"]').focus()
-				$(this).addClass('active')
-				$(this).attr('data-input', 'remove')
-			})
-			$(document).on('click', '[data-input="remove"]', function(){
-				$(this).closest('[data-input="block"]').remove()
+			$('[data-toggle="show-more"]').on('click', function(){
+				const $beforeText = $(this).closest('[data-parent="show-more"]').find('[data-text="before"]')
+				const $afterText = $(this).closest('[data-parent="show-more"]').find('[data-text="after"]')
+				$afterText.show()
+				$beforeText.hide()
+				$(this).hide()
 			})
 		})
 	</script>

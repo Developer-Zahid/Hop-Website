@@ -98,6 +98,30 @@
 	}
 }
 
+.icon-btn{
+	color: $color-black;
+	background-color: transparent;
+	font-size: toRem(25);
+	border: 0;
+	padding: 3px;
+	line-height: 0;
+
+	&:not(.active){
+		.icon-btn__icon{
+			fill: transparent;
+		}
+	}
+}
+
+.text-btn{
+	font-size: toRem(16);
+	padding: 5px;
+	background-color: transparent;
+	border: 0;
+	line-height: 1;
+	@extend %fw-medium;
+}
+
 .scroll-top{
 	bottom: toRem(15);
 	right: toRem(15);

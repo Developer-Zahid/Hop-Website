@@ -105,6 +105,68 @@
     }
 }
 
+.comment-form{
+    gap: toRem(8);
+
+    &__avatar{
+        --_size: #{toRem(35)};
+        @include min-md{
+            --_size: #{toRem(50)};
+        }
+
+        width: var(--_size);
+        height: var(--_size);
+        @extend %rounded-circle;
+        @extend %stacking-context;
+        @extend %overflow-hidden;
+
+        &__bg{
+            @extend %full-width;
+        }
+    }
+
+    &__field{
+        @extend %rounded-pill;
+        @extend %overflow-hidden;
+        border: 1px solid $color-gray;
+        padding-top: toRem(4);
+        padding-bottom: toRem(4);
+        padding-left: toRem(18);
+        
+        &__input{
+            color: $color-gray;
+            padding-top: toRem(10);
+            padding-bottom: toRem(10);
+            max-height: toRem(44);
+            background-color: transparent;
+            resize: none;
+            @extend %custom-scrollbar;
+
+            &::placeholder{
+                opacity: 1;
+                color: currentColor;
+            }
+        }
+
+        &__btn{
+            display: none;
+            font-size: toRem(22);
+            padding-right: toRem(10);
+
+            &:active{
+                color: $color-primary;
+            }
+            @include hover{
+                &:hover,
+                &:focus-visible
+                {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button
 {

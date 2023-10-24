@@ -191,3 +191,17 @@ video
 		@extend %custom-scrollbar;
 	}
 }
+
+// [data-parent="show-more"]{
+// 	white-space: pre-line;
+// }
+
+[data-text="before"],
+[data-text="after"]
+{
+	font-size: toRem(16);
+}
+
+[data-text="after"]{
+	display: none;
+}

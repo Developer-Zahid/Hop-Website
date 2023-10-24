@@ -6,7 +6,6 @@
 	--bs-border-radius: #{toRem(8)};
 	@include min-md{
 		--bs-btn-font-size: #{toRem(16)};
-		--bs-border-radius: #{toRem(15)};
 	}
 	@include min-xxl{
 		--bs-btn-padding-y: #{toRem(15)};

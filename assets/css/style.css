@@ -393,7 +393,6 @@ video {
 @media (min-width: 768px) {
   .btn {
     --bs-btn-font-size: 1rem;
-    --bs-border-radius: 0.9375rem;
   }
 }
 @media (min-width: 1400px) {
@@ -1501,6 +1500,16 @@ select {
     --_total-columns: 4;
   }
 }
+@media (min-width: 1200px) {
+  .pinterest-grid--5 {
+    --_total-columns: 5;
+  }
+}
+@media (min-width: 1200px) {
+  .pinterest-grid--6 {
+    --_total-columns: 6;
+  }
+}
 .pinterest-grid__column {
   -webkit-column-break-inside: avoid;
      -moz-column-break-inside: avoid;
@@ -1688,7 +1697,7 @@ select {
 }
 
 .comment-area {
-  max-height: calc(var(--vh) * 100 - 100px);
+  max-height: min(37.5rem, var(--vh) * 100 - 100px);
   overflow: auto;
 }
 
@@ -1814,19 +1823,8 @@ select {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 1200px) {
-  .profile .pinterest-grid {
-    --_total-columns: 5;
-  }
-}
-
 .interests__title {
   font-size: 1.875rem;
-}
-@media (min-width: 1200px) {
-  .interests .pinterest-grid {
-    --_total-columns: 6;
-  }
 }
 
 .user-slider,

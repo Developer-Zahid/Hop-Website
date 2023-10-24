@@ -3,10 +3,4 @@
         font-size: toRem(30);
         @extend %fw-regular;
     }
-
-    .pinterest-grid{
-        @include min-xl{
-            --_total-columns: 6;
-        }
-    }
 }

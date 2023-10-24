@@ -10,7 +10,7 @@
 }
 
 .comment-area{
-    max-height: calc((var(--vh) * 100) - 100px);
+    max-height: min(toRem(600), calc((var(--vh) * 100) - 100px));
     overflow: auto;
     @extend %custom-scrollbar;
 }
